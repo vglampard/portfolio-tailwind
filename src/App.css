@@ -1,4 +1,12 @@
+body{
+    background-color: white;
+    /* background-image: url("./marble.png");
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed; */
 
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

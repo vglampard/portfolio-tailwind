@@ -5,17 +5,17 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline outline-1 bg-slate-200 mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline outline-1 bg-slate-100 mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-slate-900"
               href="/"
             >
               <span className="text-xl">Victoria Lampard </span>Full Stack Dev
             </a>
             <button
-              className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="text-slate-900 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
@@ -33,7 +33,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <Link
                   to="projects"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-slate-900 hover:opacity-75"
                 >
                   Projects
                 </Link>
@@ -41,7 +41,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <Link
                   to="skills"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-slate-900hover:opacity-75"
                 >
                   Skills
                 </Link>
@@ -49,7 +49,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <Link
                   to="aboutme"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-slate-900 hover:opacity-75"
                 >
                   About Me
                 </Link>
@@ -57,7 +57,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <Link
                   to="contact"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-slate-900 hover:opacity-75"
                 >
                   Contact
                 </Link>
