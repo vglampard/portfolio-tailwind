@@ -21,7 +21,7 @@ function App() {
         <Route path="projects" element={ <Projects/> } />
         <Route path="contact" element={ <Contact/> } />
       </Routes> 
-      <Link to="projects">Previous projects</Link>
+      
    </body>
   
       
