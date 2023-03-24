@@ -5,7 +5,7 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline outline-1 bg-yellow-200 mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline outline-1 bg-slate-200 mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
@@ -40,20 +40,29 @@ export default function Navbar({ fixed }) {
               </li>
               <li className="nav-item">
                 <Link
-                  to="contact"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                >
-                  Contact
-                </Link>
-              </li>{" "}
-              <li className="nav-item">
-                <Link
                   to="skills"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                 >
                   Skills
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  to="aboutme"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                >
+                  About Me
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="contact"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                >
+                  Contact
+                </Link>
+              </li>{" "}
+            
             </ul>
           </div>
         </div>
