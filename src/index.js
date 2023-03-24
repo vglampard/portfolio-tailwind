@@ -9,7 +9,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import Navbar from "./components/Navbar/Navbar";
-
+import Footer from "./components/Footer/Footer";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
@@ -21,7 +21,7 @@ root.render(
       <Route path="aboutme" element={<AboutMe />} />
       <Route path="skills" element={<Skills />} />
     </Routes>
-  </BrowserRouter>
+    <Footer/> </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
