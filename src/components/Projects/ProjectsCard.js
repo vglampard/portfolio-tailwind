@@ -5,15 +5,17 @@ import { motion } from "framer-motion";
 
 export default function ProjectsCard({ project }) {
   return (
-   
-    <motion.div
-    variants={fadeIn("down", "tween", 0.2, 1)}
-    >
-      <div className="bg-slate-50 m-5 p-4 rounded drop-shadow-lg">
+   <>
+    <motion.div  initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}>
+<div className="bg-slate-50 m-5 p-4 rounded drop-shadow-lg">
         <img src={image} alt="project" />
         <h1>{project.description}</h1>
       </div>
     </motion.div>
+    
+      </>
 
   );
 }

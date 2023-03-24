@@ -1,9 +1,8 @@
 import "./App.css";
-
 function App() {
   return (
     <div className="flex justify-center">
-      <div className="flex items-center justify-center w-[70%] max-h-[60%] bg-slate-200 h-[70%]">
+      <div className="flex items-center justify-center w-[70%] max-h-[60%] bg-slate-200 h-[70%] mt-20 drop-shadow">
         <p className="p-4">
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
