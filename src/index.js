@@ -14,6 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Navbar/>
+    <div className="w-[100vw] flex items-center flex-col h-[100%] justify-center">
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="projects" element={<Projects />} />
@@ -21,7 +22,8 @@ root.render(
       <Route path="aboutme" element={<AboutMe />} />
       <Route path="skills" element={<Skills />} />
     </Routes>
-    <Footer/> </BrowserRouter>
+    </div>
+    <Footer /> </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
