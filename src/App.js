@@ -10,8 +10,8 @@ function App() {
   );
 
   return (
-    <div className="flex justify-center items-center h-[80vh] bg-red-50">
-      <div className="flex items-center justify-center w-[70%] max-h-[60%] bg-slate-200 h-[70%] rounded drop-shadow">
+    <div className="flex justify-center items-center h-[80vh]">
+      <div className="flex items-center justify-center w-[70%] rounded drop-shadow">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}

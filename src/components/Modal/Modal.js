@@ -52,7 +52,7 @@ export default function Modal({MODAL_STATES}) {
                 {/*footer*/}
                 <div className="flex items-center justify-end py-2 px-6 border-t border-solid border-slate-200 rounded-b">
                   <button
-                    className="text-red-500 background-transparent font-bold uppercase px-2 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="background-transparent font-thin uppercase px-2 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => MODAL_STATES.setShowModal(false)}
                   >

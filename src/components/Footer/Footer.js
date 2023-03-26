@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer class="bg-slate-100
              text-sm text-white text-center
-             border-t-2 border-red-500
+             border-t-1 border-black outline-1
              fixed
              inset-x-0
              bottom-0

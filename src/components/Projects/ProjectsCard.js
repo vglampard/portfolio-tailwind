@@ -41,14 +41,14 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
           <div className="flex justify-between">
             <h1
               onClick={handleSeeMore}
-              className="uppercase p-2"
+              className="text-sm font-thin leading-tight inline-block mr-4 py-2 pl-2 text-justify text-slate-900 uppercase"
             >
               {project.title}
               {showMore ? " <<<" : " >>>"}
             </h1>
             {showMore && (
               <>
-                <p className="p-2">{project.subtitle}</p>
+                <p className="p-2 text-sm font-thin leading-tight inline-block mr-4 py-2 text-justify text-slate-900">{project.subtitle}</p>
                 <button
                   className="bg-slate-300 text-slate-900 m-3 active:bg-slate-50 uppercase text-sm rounded shadow hover:shadow-xl w-10 outline-none justify-center focus:outline-none flex items-center ease-linear transition-all duration-150"
                   type="button"
