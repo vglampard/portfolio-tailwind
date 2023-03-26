@@ -15,10 +15,16 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
     weather,
   };
 
-  function handleClick(){
+  function handleSeeMore(){
     setShowMore(!showMore); 
     MODAL_STATES.setProject(project)
   }
+
+  function handleOpenModal(){
+    MODAL_STATES.setShowModal(true);
+    setShowMore(false)
+  }
+
   return (
     <div>
       <motion.div
@@ -34,7 +40,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
           />
           <div className="flex justify-between">
             <h1
-              onClick={handleClick}
+              onClick={handleSeeMore}
               className="uppercase p-2"
             >
               {project.title}
@@ -46,7 +52,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
                 <button
                   className="bg-slate-300 text-slate-900 m-3 active:bg-slate-50 uppercase text-sm rounded shadow hover:shadow-xl w-10 outline-none justify-center focus:outline-none flex items-center ease-linear transition-all duration-150"
                   type="button"
-                  onClick={() => MODAL_STATES.setShowModal(true)}
+                  onClick={handleOpenModal}
                 >
                   +
                 </button>

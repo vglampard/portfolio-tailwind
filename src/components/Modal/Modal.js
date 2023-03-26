@@ -1,9 +1,9 @@
 import React from "react";
-import password from "../projects/projectGifs/password.gif";
-import amigo from "../projects/projectGifs/amigo.gif";
-import nostrami from "../projects/projectGifs/nostrami.gif";
-import payback from "../projects/projectGifs/payback.gif";
-import weather from "../projects/projectGifs/weather.gif";
+import password from "../Projects/projectGifs/password.gif";
+import amigo from "../Projects/projectGifs/amigo.gif";
+import nostrami from "../Projects/projectGifs/nostrami.gif";
+import payback from "../Projects/projectGifs/payback.gif";
+import weather from "../Projects/projectGifs/weather.gif";
 export default function Modal({MODAL_STATES}) {
   const project = MODAL_STATES.project
   const GIFS = {
@@ -53,13 +53,7 @@ export default function Modal({MODAL_STATES}) {
                   >
                     Close
                   </button>
-                  <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                    type="button"
-                    onClick={() => MODAL_STATES.setShowModal(false)}
-                  >
-                    Save Changes
-                  </button>
+                
                 </div>
               </div>
             </div>

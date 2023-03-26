@@ -5,10 +5,10 @@ import Modal from "../Modal/Modal";
 
 export default function Projects() {
   const [showModal, setShowModal] = React.useState(false);
-  const [project, setProject] = React.useState({})
+  const [project, setProject] = React.useState({});
 
   const MODAL_STATES = { showModal, setShowModal, project, setProject };
-  
+
   console.log("MS:", MODAL_STATES);
   return (
     <div className="flex justify-center items-center h-[100%]">
