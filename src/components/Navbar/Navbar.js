@@ -5,7 +5,7 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline w-[100%] outline-1 bg-slate-100 mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline w-[100%] outline-1 bg-slate-100 mb-1">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a
@@ -47,14 +47,14 @@ export default function Navbar({ fixed }) {
                   Skills
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   to="aboutme"
                   className="px-3 py-2 flex items-center text-xs uppercase font-thin leading-snug text-slate-900 hover:opacity-75"
                 >
                   About Me
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link
                   to="contact"
