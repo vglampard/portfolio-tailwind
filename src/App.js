@@ -2,13 +2,6 @@ import "./App.css";
 import { motion } from "framer-motion";
 
 function App() {
-  console.log(
-    "KEYS:",
-    process.env.SERVICE_ID,
-    process.env.TEMPLATE_ID,
-    process.env.PUB_KEY
-  );
-
   return (
     <div className="flex justify-center items-center h-[80vh]">
       <div className="flex items-center justify-center w-[70%] rounded drop-shadow">

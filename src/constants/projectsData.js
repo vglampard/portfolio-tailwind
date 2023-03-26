@@ -50,4 +50,14 @@ export const PROJECTS = [
       stack: "| TypeScript | TSParticles | React | CSS |", 
       description:"Classic TypeScript weather app pulling information from OpenWeatherMap. Spiced up with a bit of dynamic weather display (I added some buttons to help users find snowy/rainy places because I desparately wanted to show off the effects, but adding an onClick to turn on the weather effects felt like cheating).", 
   },
+  {
+    title: "Otta Internal Tool",
+    subtitle: "Automating company research",
+    writeup:
+      "There's not a huge amount to say here about the tech - the app itself is very simple. I've included it here because I'm proud to say it's currently in fact being used, to great effect, by the Otta content team. I was part of this prior to retraining as a developer, and the constant simliar google searches was the most laborious part. So this is an excellent example of how, when you have a tight product/market fit (however small the niche!), the solution doesn't have to be complicated to get the job done. No real issues here. I enjoyed refactoring it down using object constants, and in fact used this project as an opporutnity to try and get the code as svelte as possible. This built on my refactoring work I did on Dingo's Directives, too, which will be comping to the portfolio website soon. I intend to scrub up the design a bit - but there's always room for tweaking on that front. ",
+      image: "otta",
+      link: "https://company-research.netlify.app/",
+      stack: "| JavaScript | React | CSS |", 
+      description:"Removing the cumbersome legwork from the Otta content team 'take' writers' role.", 
+  },
 ];

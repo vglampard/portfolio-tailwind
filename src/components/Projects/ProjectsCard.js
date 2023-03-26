@@ -5,6 +5,7 @@ import amigo from "./projectImages/amigo.png";
 import nostrami from "./projectImages/nostrami.png";
 import payback from "./projectImages/payback.png";
 import weather from "./projectImages/weather.png";
+import otta from "./projectImages/otta.png";
 export default function ProjectsCard({ project, MODAL_STATES }) {
   const [showMore, setShowMore] = React.useState(false);
   const IMAGES = {
@@ -13,6 +14,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
     nostrami,
     payback,
     weather,
+    otta,
   };
 
   function handleSeeMore(){
@@ -34,7 +36,6 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
       >
         <div className="bg-slate-50  m-2 rounded drop-shadow-lg">
           <img
-            // src={`./projectImages/${project.image}`}
             src={IMAGES[project.image]}
             alt="project"
           />

@@ -2,6 +2,7 @@ import React from "react";
 import password from "../Projects/projectGifs/password.gif";
 import amigo from "../Projects/projectGifs/amigo.gif";
 import nostrami from "../Projects/projectGifs/nostrami.gif";
+import otta from "../Projects/projectGifs/otta.gif";
 import payback from "../Projects/projectGifs/payback.gif";
 import weather from "../Projects/projectGifs/weather.gif";
 export default function Modal({MODAL_STATES}) {
@@ -12,6 +13,7 @@ export default function Modal({MODAL_STATES}) {
     nostrami,
     payback,
     weather,
+    otta,
   };
   return (
     <>
