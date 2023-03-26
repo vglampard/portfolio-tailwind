@@ -13,7 +13,9 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
         transition={{ duration: 0.5 }}
       >
         <div className="bg-slate-50  m-2 rounded drop-shadow-lg">
-          <img src={project.image} alt="project" />
+          <img 
+          // src={`./projectImages/${project.image}`}
+          src="./projectImages/password.png" alt="project" />
           <div className="flex justify-between">
             <h1>{project.title}</h1>
             <button
