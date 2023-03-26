@@ -47,16 +47,16 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
               {showMore ? " <<<" : " >>>"}
             </h1>
             {showMore && (
-              <>
-                <p className="p-2 text-sm font-thin leading-tight inline-block mr-4 py-2 text-justify text-slate-900">{project.subtitle}</p>
+              <div className="flex flex-col items-end pr-1">
+                <p className="pt-2 text-xs font-thin leading-tight inline-block  text-slate-900 ">{project.subtitle}</p>
                 <button
-                  className="bg-slate-300 text-slate-900 m-3 active:bg-slate-50 uppercase text-sm rounded shadow hover:shadow-xl w-10 outline-none justify-center focus:outline-none flex items-center ease-linear transition-all duration-150"
+                  className="bg-slate-300 text-slate-900 active:bg-slate-50 uppercase text-sm rounded shadow hover:shadow-xl w-10 outline-none justify-center focus:outline-none flex items-center ease-linear transition-all duration-150 my-1"
                   type="button"
                   onClick={handleOpenModal}
                 >
                   +
                 </button>
-              </>
+              </div>
             )}
           </div>
         </div>
