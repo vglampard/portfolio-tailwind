@@ -48,7 +48,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
             </h1>
             {showMore && (
               <div className="flex flex-col items-end pr-1">
-                <p className="pt-2 text-xs font-thin leading-tight inline-block  text-slate-900 ">{project.subtitle}</p>
+                <p className="pt-2 text-xs font-thin leading-tight inline-block  text-slate-900 ease-linear">{project.subtitle}</p>
                 <button
                   className="bg-slate-300 text-slate-900 active:bg-slate-50 uppercase text-sm rounded shadow hover:shadow-xl w-10 outline-none justify-center focus:outline-none flex items-center ease-linear transition-all duration-150 my-1"
                   type="button"
