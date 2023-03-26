@@ -11,7 +11,7 @@ export default function ProjectsCard({ project }) {
     transition={{ duration: 0.5 }}>
 <div className="bg-slate-50 m-5 p-4 rounded drop-shadow-lg">
         <img src={image} alt="project" />
-        <h1>{project.description}</h1>
+        <h1>{project.title}</h1>
       </div>
     </motion.div>
     

@@ -1,7 +1,7 @@
 export const PROJECTS = [
     {
       title: "Amigo - Your travel companion",
-      subtitle: "TECH STACK INFO",
+      subtitle: "TECHSTACK INFO",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: "./project-1.gif",
