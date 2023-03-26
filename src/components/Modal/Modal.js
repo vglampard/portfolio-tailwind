@@ -1,8 +1,18 @@
 import React from "react";
-import amigoGif from "../Projects/projectGifs/amigo.gif"
-
+import password from "../projects/projectGifs/password.gif";
+import amigo from "../projects/projectGifs/amigo.gif";
+import nostrami from "../projects/projectGifs/nostrami.gif";
+import payback from "../projects/projectGifs/payback.gif";
+import weather from "../projects/projectGifs/weather.gif";
 export default function Modal({MODAL_STATES}) {
   const project = MODAL_STATES.project
+  const GIFS = {
+    password,
+    amigo,
+    nostrami,
+    payback,
+    weather,
+  };
   return (
     <>
       
@@ -32,6 +42,7 @@ export default function Modal({MODAL_STATES}) {
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-slate-500 text-lg leading-relaxed">
                     {project.description}     </p>
+                    <img src={GIFS[project.image]} alt="gif demo"/>
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
