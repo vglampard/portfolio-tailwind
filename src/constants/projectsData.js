@@ -4,7 +4,7 @@ export const PROJECTS = [
     subtitle: "TECHSTACK INFO",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "../images/project-1.gif",
+    image: "../images/password.png",
     link: "https://reactbootcamp.com",
   },
   {
@@ -12,7 +12,7 @@ export const PROJECTS = [
     subtitle: "TECH STACK INFO",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
+    image: "../images/password.png",
     link: "https://reactbootcamp.com",
   },
   {
@@ -20,7 +20,7 @@ export const PROJECTS = [
     subtitle: "TECH STACK INFO",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
+    image: "../images/password.png",
     link: "https://reactbootcamp.com",
   },
   {
@@ -28,7 +28,7 @@ export const PROJECTS = [
     subtitle: "TECH STACK INFO",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
+    image: "../images/password.png",
     link: "https://reactbootcamp.com",
   },
 ];
