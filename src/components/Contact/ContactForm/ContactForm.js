@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const ContactForm = () => {
   const PUB_KEY = process.env.REACT_APP_PUBLIC_KEY;
@@ -7,50 +9,84 @@ export const ContactForm = () => {
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
 
   const form = useRef();
+  
+  const notify = () => toast('EMAIL SENT', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    });
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUB_KEY).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUB_KEY).then(
+    //   (result) => {
+    //     console.log(result.text);
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    // );
+    form.current.reset();
+    notify();
+
   };
 
   return (
     <>
+    <ToastContainer
+position="top-right"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="dark"
+type="success"
+/>
       <form
         ref={form}
         onSubmit={sendEmail}
         className="bg-slate-200 rounded p-5"
       >
-        <label className="text-sm font-thin">Name</label>
         <input
           type="text"
           name="user_name"
-          className="boder-b  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline"
+          placeholder="Name..."
+          className="boder-b  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 my-1 px-2 leading-tight focus:outline"
         />
-        <label className="text-sm font-thin">Email</label>
         <input
           type="email"
+          placeholder="Email..."
           name="user_email"
           className="boder-b  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline"
         />
-        <label className="text-sm font-thin">Message</label>
+       
         <textarea
           name="message"
-          className="boder-b  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline"
+          className="rounded my-1  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline"
+          placeholder="Message..."
         />
+        <div className="w-full flex justify-end">
         <input
           type="submit"
           value="Send"
-          className=" bg-slate-50 border-none w-1/5 rounded text-gray-700 mr-3 py-1 px-2 leading-tight hover:bg-white text-sm "
+          className=" bg-slate-50 border-none w-1/6 rounded text-gray-700 py-1 leading-tight hover:bg-white text-sm "
         />
+        </div>
       </form>
     </>
   );
 };
+
+
+
+ 

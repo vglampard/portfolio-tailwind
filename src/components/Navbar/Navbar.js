@@ -47,7 +47,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <Link
                   to="projects"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-thin leading-snug text-slate-900 hover:opacity-75"
+                  className="px-3 py-2 pt-4 md:pt-2 lg:pt-2 flex items-center text-xs uppercase font-thin leading-snug text-slate-900 hover:opacity-75"
                 >
                   Projects
                 </Link>
