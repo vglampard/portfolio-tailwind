@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Navbar/>
-    <div className="w-[100vw] flex items-center flex-col h-[100%] justify-center">
+    <div className="w-[100vw] bg-[url('./marble.png')]  bg-opacity-50 flex items-center flex-col h-[100%] justify-center">
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="projects" element={<Projects />} />

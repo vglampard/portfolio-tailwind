@@ -5,7 +5,6 @@ import otta from "../Projects/projectGifs/otta.gif";
 import payback from "../Projects/projectGifs/payback.gif";
 import weather from "../Projects/projectGifs/weather.gif";
 import MarkdownText from "./ModalText";
-import nostramiMD from "../constants/markdown/MDnostrami.md";
 export default function Modal({ MODAL_STATES }) {
   const project = MODAL_STATES.project;
   const GIFS = {
@@ -15,10 +14,6 @@ export default function Modal({ MODAL_STATES }) {
     payback,
     weather,
     otta,
-  };
-
-  const WRITE_UPS = {
-    nostramiMD,
   };
 
   return (
@@ -59,8 +54,10 @@ export default function Modal({ MODAL_STATES }) {
                       className="py-5 p-auto lg:w-[60%]"
                     />
                   </div>
-                  <div className="w-900">
-                    <MarkdownText text={project.writeup} className="w-[100%]" />
+                  <div className="">
+                    <MarkdownText
+                      text={project.writeup}
+                    />
                   </div>
                   <p className="text-sm font-thin leading-tight inline-block mr-4 py-2 text-justify flex-wrap text-slate-900">
                     {project.writeup}
