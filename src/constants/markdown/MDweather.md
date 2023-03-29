@@ -1,0 +1,5 @@
+This was an interesting foray into TypeScript, and a fun extension of the classic weather app project. The background renders different light qualities for sunny or overcast areas, and there's TS Particles effects for snowy and rainy locations as well as different icons for each weather type. 
+
+This made for a lot of conditional rendering, and I'm sure there's space here to revisit and refactor. But I'm especially pleased with the solution for identifying the correct icon to use. There's dozens and dozens that come through from the API data, and here we're using a regex filter to check for specific patterns (cloudy, rainy, etc) and assign a single generic icon based on that. 
+
+Typescripting for the weather particles options was a head-scratcher, but eventually we found that applying ISourceOptions was an easier fix than specifying a type dozens of lines long. The 'find me snow/rain' buttons are just to showcase these ffects we put in (and having a simple onClick to fire them off seemed like cheating...).

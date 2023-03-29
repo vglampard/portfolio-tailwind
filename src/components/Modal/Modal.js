@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from "react";
-import Markdown from "markdown-to-jsx";
 import password from "../Projects/projectGifs/password.gif";
 import amigo from "../Projects/projectGifs/amigo.gif";
 import nostrami from "../Projects/projectGifs/nostrami.gif";
 import otta from "../Projects/projectGifs/otta.gif";
 import payback from "../Projects/projectGifs/payback.gif";
 import weather from "../Projects/projectGifs/weather.gif";
-
+import MarkdownText from "./ModalText";
+import nostramiMD from "../constants/markdown/MDnostrami.md";
 export default function Modal({ MODAL_STATES }) {
   const project = MODAL_STATES.project;
   const GIFS = {
@@ -18,19 +17,9 @@ export default function Modal({ MODAL_STATES }) {
     otta,
   };
 
-  const file_name = "rmtest2.md";
-  const [post, setpost] = useState("");
-
-  useEffect(() => {
-    import(`../../constants/markdown/${file_name}`)
-    .then((res) => {
-      fetch(res.default)
-      .then((res) => res.text())
-      .then(res=>setpost(res))
-      .catch(err=>console.log(err));
-    })
-    .catch(err=>console.log(err))
-  });
+  const WRITE_UPS = {
+    nostramiMD,
+  };
 
   return (
     <>
@@ -48,7 +37,7 @@ export default function Modal({ MODAL_STATES }) {
                     </h3>
                     {project.stack}
                   </div>
-                  <div><Markdown>{post}</Markdown></div>
+
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => MODAL_STATES.setShowModal(false)}
@@ -69,6 +58,9 @@ export default function Modal({ MODAL_STATES }) {
                       alt="gif demo"
                       className="py-5 p-auto lg:w-[60%]"
                     />
+                  </div>
+                  <div className="w-900">
+                    <MarkdownText text={project.writeup} className="w-[100%]" />
                   </div>
                   <p className="text-sm font-thin leading-tight inline-block mr-4 py-2 text-justify flex-wrap text-slate-900">
                     {project.writeup}

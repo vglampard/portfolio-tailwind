@@ -34,6 +34,7 @@ function App() {
   return (
     <div className="flex w-[100vw] justify-center items-center h-[80vh]">
       <div className="flex items-center justify-center w-[80%] rounded drop-shadow">
+       
         <motion.div
           className="container"
           initial="closed"

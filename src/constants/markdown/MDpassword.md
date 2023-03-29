@@ -1,0 +1,7 @@
+I was looking at salting, hashing, peppering, and encryption, and it struck me that the techniques used to protext uers could be taken advantage of by users themselves. As in, the guaranteed digests you get from hashing functions could prove a neat way of guaranteed password recall - something I was finding tricky as I was signing up to a number of different websites at the time. 
+
+It was interesting to explore the different hashing algorithms - SHA256 was a no-brainer, and I played around with ways of making the has digest more appropriate for a password: 
+- Adding special characters, upper case, lower case, and numbers 
+- Scripting a sort of 'riffle shuffle' to blend these into the digest 
+
+The user adds their own salt each time, and I realised something approximating 'pepper' could be used if I take advantage of environmental variables. It was also nice to add a nice touch of JS Particles - I'd been tussling with it on other projects as the layering wasn't working out quite right. But I cracked it, and I like the way this turned out. All in all, this was a nice toy project to dive into a bit of online security research, make a little tool that I actually am using quite frequently, as well as get some design practice in. 
