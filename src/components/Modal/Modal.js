@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Markdown from "markdown-to-jsx";
 import password from "../Projects/projectGifs/password.gif";
 import amigo from "../Projects/projectGifs/amigo.gif";
 import nostrami from "../Projects/projectGifs/nostrami.gif";
 import otta from "../Projects/projectGifs/otta.gif";
 import payback from "../Projects/projectGifs/payback.gif";
 import weather from "../Projects/projectGifs/weather.gif";
-// import text from "../../markdown/README.md"
 
 export default function Modal({ MODAL_STATES }) {
   const project = MODAL_STATES.project;
@@ -17,6 +17,21 @@ export default function Modal({ MODAL_STATES }) {
     weather,
     otta,
   };
+
+  const file_name = "rmtest2.md";
+  const [post, setpost] = useState("");
+
+  useEffect(() => {
+    import(`../../constants/markdown/${file_name}`)
+    .then((res) => {
+      fetch(res.default)
+      .then((res) => res.text())
+      .then(res=>setpost(res))
+      .catch(err=>console.log(err));
+    })
+    .catch(err=>console.log(err))
+  });
+
   return (
     <>
       {MODAL_STATES.showModal ? (
@@ -33,6 +48,7 @@ export default function Modal({ MODAL_STATES }) {
                     </h3>
                     {project.stack}
                   </div>
+                  <div><Markdown>{post}</Markdown></div>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => MODAL_STATES.setShowModal(false)}
@@ -48,13 +64,15 @@ export default function Modal({ MODAL_STATES }) {
                     {project.description}{" "}
                   </p>
                   <div className="flex justify-center w-full">
-                  <img
-                    src={GIFS[project.image]}
-                    alt="gif demo"
-                    className="py-5 p-auto lg:w-[60%]"
-                  />
+                    <img
+                      src={GIFS[project.image]}
+                      alt="gif demo"
+                      className="py-5 p-auto lg:w-[60%]"
+                    />
                   </div>
-                    <p className="text-sm font-thin leading-tight inline-block mr-4 py-2 text-justify flex-wrap text-slate-900" >{project.writeup}</p>
+                  <p className="text-sm font-thin leading-tight inline-block mr-4 py-2 text-justify flex-wrap text-slate-900">
+                    {project.writeup}
+                  </p>
                 </div>
                 <div className="w-full flex leading-tight   items-center text-sm uppercase">
                   <a href={project.link} target="_blank" rel="noreferrer">
