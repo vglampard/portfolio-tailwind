@@ -42,13 +42,18 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
           <div className="flex justify-between">
             <h1
               onClick={handleSeeMore}
-              className="text-sm font-thin leading-tight inline-block mr-4 py-2 pl-2 text-justify text-slate-900 uppercase"
+              className="text-sm border-b  leading-tight inline-block mr-4 py-2 pl-2 text-justify text-slate-900 uppercase"
             >
               {project.title}
               {showMore ? " <<<" : " >>>"}
             </h1>
             {showMore && (
-              <div className="flex flex-col items-end pr-1">
+              <motion.div initial={{x: -300}}
+              animate={{x: 0}} transition={{
+                type: "tween",
+                duration: "0.5",
+              
+            }} className="flex flex-col items-end pr-2 pb-1">
                 <p className="pt-2 text-xs font-thin leading-tight inline-block  text-slate-900 ease-linear">{project.subtitle}</p>
                 <button
                   className="bg-slate-300 text-slate-900 active:bg-slate-50 uppercase text-sm rounded shadow hover:shadow-xl w-10 outline-none justify-center focus:outline-none flex items-center ease-linear transition-all duration-150 my-1"
@@ -57,7 +62,8 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
                 >
                   +
                 </button>
-              </div>
+                </motion.div>
+
             )}
           </div>
         </div>
