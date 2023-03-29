@@ -19,12 +19,12 @@ export default function Navbar({ fixed }) {
                 />
               </a>
               <a
-                className="text-sm font-thin leading-tight inline-block mr-4 py-2 whitespace-nowrap uppercase text-slate-900"
+                className="text-lg font-thin leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-900"
                 href="/"
               >
                 {" "}
                 Victoria Lampard <br></br>
-                <span className="text-xs">Full Stack Dev</span>
+                <span className="text-sm">Full Stack Dev</span>
               </a>
             </div>
 

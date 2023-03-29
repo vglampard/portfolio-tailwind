@@ -24,14 +24,14 @@ export const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUB_KEY).then(
-    //   (result) => {
-    //     console.log(result.text);
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //   }
-    // );
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUB_KEY).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
     form.current.reset();
     notify();
 
