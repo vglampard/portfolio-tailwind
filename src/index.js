@@ -17,7 +17,7 @@ root.render(
   <BrowserRouter>
     <Navbar/>
     
-    <div className="w-[100vw] bg-opacity-20 flex items-center flex-col h-[100%] justify-center">
+    <div className=" bg-opacity-20 flex items-center flex-col h-[100%] justify-center">
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="projects" element={<Projects />} />
