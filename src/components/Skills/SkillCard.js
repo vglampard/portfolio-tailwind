@@ -13,6 +13,14 @@ import node from "../../icons/node.png";
 import pair from "../../icons/pair.png";
 import lead from "../../icons/lead.png";
 import redux from "../../icons/redux.png";
+import cypress from "../../icons/cypress.png";
+import git from "../../icons/git.png";
+import jira from "../../icons/jira.png";
+import github from "../../icons/github.png";
+import trello from "../../icons/trello.png";
+import remote from "../../icons/remote.png";
+import server from  "../../icons/server.png";
+import aws from  "../../icons/aws.png";
 
 export default function SkillCard(area) {
   const [seeMore, setSeeMore] = useState(false);
@@ -23,13 +31,13 @@ export default function SkillCard(area) {
 
   const ICON_REF = {
     frontEnd: { javascript, html, css, react, typescript },
-    backEnd: { sql, api, node },
-    toolsAndTest: { jest },
-    principles: { agile, pair, lead },
-    learning: { java, javascript, redux },
+    backEnd: { sql, api, node, aws, server },
+    toolsAndTest: { jest, cypress, git, jira, github },
+    principles: { agile, pair, lead, trello, remote},
+    learning: { java, javascript, redux, aws },
   };
 
-  console.log("SKILL:", area.skill.ref, ICON_REF[area.skill.ref][javascript]);
+  console.log("ICONS:", area.skill.icons);
   return (
     <div className="bg-slate-200 flex-col w-[90%] p-2 rounded drop-shadow-lg flex text-justify">
       <div className="flex">
@@ -42,6 +50,7 @@ export default function SkillCard(area) {
         </h1>
         <div className="flex flex-row w-full align-center justify-end">
           {area.skill.icons.map((icon) => {
+            console.log("ICON:", ICON_REF[area.skill.ref][icon])
             return (
                 // <>
                 // <p>{area.skill.ref} </p>
