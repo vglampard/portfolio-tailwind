@@ -15,7 +15,7 @@ export const SKILLS = [
       icons: ["sql", "api", "node", "server", "aws"],
   },
   {
-    area: "Tools & Test",
+    area: "Tools/Test",
     ref:"toolsAndTest",
     subskills:
       "Postman, Cypress, Jest, Supertest, React testing library, Render/Netlify, version control (Git), Jira, AWS Cloud Practitioner Essentials, Firebase",
@@ -33,6 +33,6 @@ export const SKILLS = [
     ref:"learning",
     subskills:
       "Redux, AWS, Nostr, more about data structures and algorithms with a focus on scripting, and dipping my toes into Java...",
-      icons: ["java", "javascript", "redux"],
+      icons: ["java", "javascript", "redux", "aws", "nostr"],
   },
 ];

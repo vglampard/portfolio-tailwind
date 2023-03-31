@@ -16,12 +16,9 @@ export default function Modal({ MODAL_STATES }) {
     otta,
   };
 
-
-
   return (
     <>
       {MODAL_STATES.showModal ? (
-        
         <>
           <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-auto my-6 h-[100%] mx-auto max-w-3xl">
@@ -58,11 +55,8 @@ export default function Modal({ MODAL_STATES }) {
                     />
                   </div>
                   <div className="flex justify-center">
-                    <MarkdownText
-                      text={project.writeup}
-                    />
+                    <MarkdownText text={project.writeup} />
                   </div>
-                
                 </div>
                 <div className="w-full flex leading-tight p-4 items-center justify-center  text-base uppercase">
                   <a href={project.link} target="_blank" rel="noreferrer">
@@ -86,7 +80,6 @@ export default function Modal({ MODAL_STATES }) {
             </div>
           </div>
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-          
         </>
       ) : null}
     </>
