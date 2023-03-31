@@ -1,5 +1,5 @@
 import "./App.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import github from "./icons/github-sign.png";
 import linkedin from "./icons/linkedin-logo.png";
 import wordpress from "./icons/wordpress-logo.png";
