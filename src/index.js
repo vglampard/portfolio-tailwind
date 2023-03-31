@@ -10,11 +10,14 @@ import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+
+// 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Navbar/>
-    <div className="w-[100vw] bg-[url('./marble.png')]  bg-opacity-50 flex items-center flex-col h-[100%] justify-center">
+    
+    <div className=" bg-opacity-20 flex items-center h-[60%] justify-center">
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="projects" element={<Projects />} />

@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Markdown from "markdown-to-jsx";
 
-
 export default function MarkdownText({text}) {
-
-    const file_name = "MDamigo.md";
   const [post, setpost] = useState("");
-console.log("MD TEXT KEY:", text)
 
   useEffect(() => {
     import(`../../constants/markdown/${text}.md`)
@@ -22,7 +18,7 @@ console.log("MD TEXT KEY:", text)
 
   return (
     <div >
-        <div><Markdown className='prose font-thin leading-tight text-justify '>{post}</Markdown></div>
+        <div><Markdown className='prose font-thin leading-tight prose-sm  text-justify '>{post}</Markdown></div>
     </div>
   )
 }

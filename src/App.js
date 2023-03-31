@@ -1,17 +1,16 @@
 import "./App.css";
 import { motion } from "framer-motion";
-
+import github from "./icons/github-sign.png";
+import linkedin from "./icons/linkedin-logo.png";
+import wordpress from "./icons/wordpress-logo.png";
+import pp from "./pp.jpg";
+import { Link } from "react-router-dom";
+import { text, icons } from "./constants/homePageData";
 function App() {
   const sideVariants = {
-    closed: {
-      transition: {
-        staggerChildren: 0.2,
-        staggerDirection: -1,
-      },
-    },
     open: {
       transition: {
-        staggerChildren: 1,
+        staggerChildren: 0.5,
         staggerDirection: 1,
         duration: 5,
       },
@@ -24,45 +23,77 @@ function App() {
     },
     open: { x: 0 },
   };
-  const links = [
-   
-    { name: "Victoria Lampard  > > >", id: 1, style: "text-[1.5rem] font-thin  leading-tight p-2 m-2 bg-slate-200 rounded w-[100%] flex  items-center h-20" },
-    { name: "Full Stack Developer  > > ", id: 2, style: "text-[1.5rem] font-thin  leading-tight p-2 m-2 bg-slate-200 whitespace-pre rounded w-[100%] flex  items-center h-20" },
-    { name: "Welcome to my portfolio.  > ", id: 3,style: "text-[1rem] font-thin  leading-tight p-2 m-2 bg-slate-200 rounded w-[100%] flex justify-end flex-wrap items-center h-20"  },
-  ];
+
+  const IMAGES = { wordpress, github, linkedin };
 
   return (
-    <div className="flex w-[100vw] justify-center items-center h-[80vh]">
-      <div className="flex items-center justify-center w-[80%] rounded drop-shadow">
-       
+    <div className="flex flex-col  mt-20 items-center justify-center ">
+      <div className="flex flex-col lg:justify-center lg:gap-5 lg:flex-row items-center justify-center">
+        <img
+          src={pp}
+          alt="profile victoria lampard"
+          className="w-[30%] md:w-[20%] lg:w-[20%] rounded-full  outline "
+        />
         <motion.div
-          className="container"
+          className="container pt-2 sm:flex-col flex items-start  justify-center  lg:max-w-[40%] w-[60%] "
           initial="closed"
           animate="open"
           variants={sideVariants}
         >
-          {links.map(({ name, to, id, style }) => (
-            <motion.p
-              key={id}
-              variants={itemVariants}
-              transition={{
-                duration: 2,
-              }} className={style}
-            >
-              {name}
-            </motion.p>
-          ))}
+          <div className="flex flex-wrap flex-col justify-end ">
+            {text.map(({ name, to, id, style }) => (
+              <motion.p
+                key={id}
+                variants={itemVariants}
+                transition={{ duration: 2 }}
+                className={style}
+              >
+                {name}
+              </motion.p>
+            ))}
+          </div>
         </motion.div>
-
-       {/* <div className="bg-slate-200 h-10"><p className="font-thin text-xs leading-tight p-2 m-2 whitespace-pre">
-  <span className="text-2xl">Victoria Lampard,</span> linguist turned <br></br><span className="text-4xl uppercase ">full stack developer</span>.<br></br>      Welcome to
-  my portfolio.
-  
-  <span className="text-4xl"></span>
-  <span className="text-4xl"></span>
-</p>
-      </div> */}
-    </div>
+      </div>
+      <div classname="flex flex-col justify-center">
+        <div className="p-5 text-justify lg:w-[50vw] md:w-[50vw]">
+          <p>
+            <span className="bg-slate-200 px-1 pb-1 text-lg">
+              Linguist turned full stack developer,
+            </span>{" "}
+            I'm a proactive problem-solver, an adept communicator, and committed
+            to rapid career development. Have a browse of my{" "}
+            <Link to="projects" className="  bg-slate-200 px-1 pb-1 ">
+              projects
+            </Link>
+            , see the{" "}
+            <Link to="skills" className=" bg-slate-200 px-1 pb-1 ">
+              skills
+            </Link>{" "}
+            I'm developing, and <Link to="contact" className=" bg-slate-200 px-1 pb-1 ">
+            get in touch!
+            </Link>
+          </p>
+        </div>
+        <div className="flex items-start gap-2 justify-center ">
+          {icons.map((icon) => (
+            <motion.a
+              key={icon.name}
+              src={IMAGES[icon.src]}
+              href={icon.link}
+              target="_blank"
+              variants={sideVariants}
+              initial={{ x: 700 }}
+              animate={{ x: 0 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 2 }}
+              className="w-10"
+            >
+              {" "}
+              <img key={icon.name} src={IMAGES[icon.src]} alt={icon.name} />
+            </motion.a>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

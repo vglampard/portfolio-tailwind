@@ -44,7 +44,7 @@ export default function Modal({ MODAL_STATES }) {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 pt-2 flex-auto">
-                  <p className="text-sm font-thin leading-tight inline-block mr-4 py-1 text-justify text-slate-900">
+                  <p className="text-sm font-thin italic leading-tight inline-block mr-4 py-1 text-justify text-slate-900">
                     {project.description}{" "}
                   </p>
                   <div className="flex justify-center w-full">
@@ -54,16 +54,11 @@ export default function Modal({ MODAL_STATES }) {
                       className="py-5 p-auto lg:w-[60%]"
                     />
                   </div>
-                  <div className="">
-                    <MarkdownText
-                      text={project.writeup}
-                    />
+                  <div className="flex justify-center">
+                    <MarkdownText text={project.writeup} />
                   </div>
-                  <p className="text-sm font-thin leading-tight inline-block mr-4 py-2 text-justify flex-wrap text-slate-900">
-                    {project.writeup}
-                  </p>
                 </div>
-                <div className="w-full flex leading-tight   items-center text-sm uppercase">
+                <div className="w-full flex leading-tight p-4 items-center justify-center  text-base uppercase">
                   <a href={project.link} target="_blank" rel="noreferrer">
                     <p>| Live |</p>
                   </a>
