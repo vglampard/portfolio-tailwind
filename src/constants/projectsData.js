@@ -42,7 +42,7 @@ export const PROJECTS = [
     writeup:
       "MDpassword",
     image: "password",
-    link: "betterPassword",
+    link: "https://your-better-password.netlify.app/",
     github: "https://github.com/vglampard/better-password",
     stack: "| JavaScript | React | Tailwind |",
     description:
