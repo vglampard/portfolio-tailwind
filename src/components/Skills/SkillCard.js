@@ -19,9 +19,10 @@ import jira from "../../icons/jira.png";
 import github from "../../icons/github.png";
 import trello from "../../icons/trello.png";
 import remote from "../../icons/remote.png";
-import server from  "../../icons/server.png";
-import aws from  "../../icons/aws.png";
-import nostr from  "../../icons/nostr.png";
+import server from "../../icons/server.png";
+import aws from "../../icons/aws.png";
+import nostr from "../../icons/nostr.png";
+
 export default function SkillCard(area) {
   const [seeMore, setSeeMore] = useState(false);
 
@@ -29,37 +30,40 @@ export default function SkillCard(area) {
     setSeeMore(!seeMore);
   }
 
+  // Object containng images to be conditoinally rendered as the code below maps over the skills array
   const ICON_REF = {
     frontEnd: { javascript, html, css, react, typescript },
     backEnd: { sql, api, node, aws, server },
     toolsAndTest: { jest, cypress, git, jira, github },
-    principles: { agile, pair, lead, trello, remote},
+    principles: { agile, pair, lead, trello, remote },
     learning: { java, javascript, redux, aws, nostr },
   };
 
-  console.log("ICONS:", area.skill.icons);
   return (
-    <div className="bg-slate-200 flex-col w-[90%] p-2 rounded drop-shadow-lg flex text-justify">
-      <div className="flex">
+    <div className="bg-slate-100  flex-col p-1 rounded drop-shadow-lg flex justify-center items-center w-full">
+      <div className="">
         <h1
           onClick={handleSeeMore}
-          className="text-base w-[100%] uppercase border-b  leading-tight inline-block  py-2 pl-1  text-slate-900 "
-        >
-          {area.skill.area}
-          {seeMore ? " <<<" : " >>>"}
+          className="text-base  hover:cursor-pointer w-full leading-tight inline-block  pb-2 pl-1  text-slate-900 "
+        > SEE {" "}
+          {area.skill.area}<span className="animate-pulse text-xl ">
+          {seeMore ? " <<<" : " >>>"}</span>
         </h1>
         <div className="flex flex-row gap-2 m-1 w-full align-center justify-end">
           {area.skill.icons.map((icon) => {
             return (
-          
-              <img src={ICON_REF[area.skill.ref][icon]} alt="#"  className="max-h-6" />
+              <img
+                src={ICON_REF[area.skill.ref][icon]}
+                alt={area.skill.ref}
+                className="max-h-6"
+              />
             );
           })}
 
-          {/* <img src={ICON_REF.frontEnd[icon]} alt="sql" className="h-7" /> */}
+      
         </div>
       </div>
-      {seeMore && <p className="px-2 text-sm">{area.skill.subskills}</p>}
+      {seeMore && <p className="px-4 text-sm m-2 italic ">{area.skill.subskills}</p>}
     </div>
   );
 }

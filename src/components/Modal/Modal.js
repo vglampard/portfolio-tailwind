@@ -55,7 +55,7 @@ export default function Modal({ MODAL_STATES }) {
                     />
                   </div>
                   <div className="flex justify-center">
-                    <MarkdownText text={project.writeup} />
+                    <MarkdownText text={project.writeup} className="" />
                   </div>
                 </div>
                 <div className="w-full flex leading-tight p-4 items-center justify-center  text-base uppercase whitespace-pre">

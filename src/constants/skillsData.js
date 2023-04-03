@@ -28,11 +28,11 @@ export const SKILLS = [
       "Agile working, test-driven development, pair programming, computational thinking, team leadership, sprint planning, computational thinking, code review, debugging, remote working, Trello",
       icons: ["agile", "pair", "lead", "trello", "remote"],
   },
-  {
-    area: "Learning",
-    ref:"learning",
-    subskills:
-      "Redux, AWS, Nostr, more about data structures and algorithms with a focus on scripting, and dipping my toes into Java...",
-      icons: ["java", "javascript", "redux", "aws", "nostr"],
-  },
+  // {
+  //   area: "Learning",
+  //   ref:"learning",
+  //   subskills:
+  //     "Redux, AWS, Nostr, more about data structures and algorithms with a focus on scripting, and dipping my toes into Java...",
+  //     icons: ["java", "javascript", "redux", "aws", "nostr"],
+  // },
 ];
