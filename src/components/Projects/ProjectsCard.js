@@ -34,12 +34,12 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
         animate={{ opacity: 1}}
         transition={{ duration: 0.5 }}
       >
-        <div className="bg-slate-50  m-2 rounded drop-shadow-lg">
+        <div className="bg-slate-50 py-2 m-2 rounded drop-shadow-lg">
           <img src={IMAGES[project.image]} alt="project" className="rounded-t"  />
-          <div className="flex justify-between">
+          <div className="flex justify-between lg:flex-row sm:flex-col">
             <h1
               onClick={handleSeeMore}
-              className="text-sm border-b hover:cursor-pointer leading-tight inline-block mr-4 py-2 pb-5 pl-2 transition ease-in-out duration-300 hover:-translate-y-0.5  text-justify text-slate-900 uppercase"
+              className="text-sm  hover:cursor-pointer leading-tight inline-block mr-4 py-2 pl-2 transition ease-in-out duration-300 hover:-translate-y-0.5   text-slate-900 uppercase"
             > See {" "}
               {project.title}{" "}
               <span className="animate-pulse text-xl ">
@@ -54,10 +54,10 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
                   type: "tween",
                   duration: "0.5",
                 }}
-                className="flex flex-col items-end pr-2 pb-1"
+                className="flex items-center justify-center pr-2 "
               >
-                {/* <div className="flex flex-col items-end pr-2 pb-1 "> */}
-                <p className="pt-2 text-xs font-thin leading-tight inline-block  text-slate-900 ease-linear">
+                <div className="flex justify-center gap-2 items-center ">
+                <p className=" text-sm font-thin leading-tight inline-block  text-slate-900 ease-linear">
                   {project.subtitle}
                 </p>
                 <button
@@ -67,7 +67,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
                 >
                   +
                 </button>
-                 {/* </div> */}
+                 </div>
               </motion.div>
             )}
           </div>

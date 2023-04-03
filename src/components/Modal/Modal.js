@@ -5,6 +5,7 @@ import otta from "../Projects/projectGifs/otta.gif";
 import payback from "../Projects/projectGifs/payback.gif";
 import weather from "../Projects/projectGifs/weather.gif";
 import MarkdownText from "./ModalText";
+
 export default function Modal({ MODAL_STATES }) {
   const project = MODAL_STATES.project;
   const GIFS = {
@@ -20,8 +21,9 @@ export default function Modal({ MODAL_STATES }) {
     <>
       {MODAL_STATES.showModal ? (
         <>
-          <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-            <div className="relative w-auto my-6 h-[100%] mx-auto max-w-3xl">
+         
+          <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
+            <div className="relative w-auto my-6 h-[100%]  mx-auto max-w-3xl">
               {/*content*/}
               <div className="border-0 rounded shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
@@ -43,7 +45,9 @@ export default function Modal({ MODAL_STATES }) {
                   </button>
                 </div>
                 {/*body*/}
-                <div className="relative p-6 pt-2 flex-auto">
+              
+                <div className="relative p-6 pt-2 flex-auto w-full">
+                  <div className="max-w-[469px]"> 
                   <p className="text-sm font-thin italic leading-tight inline-block mr-4 py-1 text-justify text-slate-900">
                     {project.description}{" "}
                   </p>
@@ -51,11 +55,12 @@ export default function Modal({ MODAL_STATES }) {
                     <img
                       src={GIFS[project.image]}
                       alt="gif demo"
-                      className="py-5 p-auto lg:w-[60%]"
+                      className="py-5 p-auto w-full"
                     />
                   </div>
-                  <div className="flex justify-center">
-                    <MarkdownText text={project.writeup} className="" />
+                  <div className="">
+                    <MarkdownText text={project.writeup} className="w-full" />
+                  </div>
                   </div>
                 </div>
                 <div className="w-full flex leading-tight p-4 items-center justify-center  text-base uppercase whitespace-pre">
@@ -69,7 +74,7 @@ export default function Modal({ MODAL_STATES }) {
                 {/*footer*/}
                 <div className="flex items-center justify-end py-2 px-6 border-t border-solid border-slate-200 rounded-b">
                   <button
-                    className="background-transparent transition ease-in-out duration-300 hover:scale-140 hover:-translate-y-0.5  font-thin uppercase px-2 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="background-transparent transition ease-in-out duration-300 hover:scale-140 hover:-translate-y-0.5  font-thin uppercase px-2 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 "
                     type="button"
                     onClick={() => MODAL_STATES.setShowModal(false)}
                   >
@@ -80,6 +85,7 @@ export default function Modal({ MODAL_STATES }) {
             </div>
           </div>
           <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+      
         </>
       ) : null}
     </>

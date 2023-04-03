@@ -30,7 +30,7 @@ export default function SkillCard(area) {
     setSeeMore(!seeMore);
   }
 
-  // Object containng images to be conditoinally rendered as the code below maps over the skills array
+  // Object containng images to be conditionally rendered as the code below maps over the skills array
   const ICON_REF = {
     frontEnd: { javascript, html, css, react, typescript },
     backEnd: { sql, api, node, aws, server },
@@ -40,7 +40,7 @@ export default function SkillCard(area) {
   };
 
   return (
-    <div className="bg-slate-100 flex-col p-1 rounded drop-shadow-lg flex justify-center items-center w-full">
+    <div className="bg-slate-100 flex-col p-2 rounded drop-shadow-lg flex justify-center items-center w-full">
       <div className="">
         <h1
           onClick={handleSeeMore}

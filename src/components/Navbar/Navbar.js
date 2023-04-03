@@ -22,9 +22,9 @@ export default function Navbar({ fixed }) {
                 className="text-lg font-thin leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-900"
                 href="/"
               >
-                {" "}
+                {" "}<p>
                 Victoria Lampard <br></br>
-                <span className="text-sm italic">Full Stack Dev</span>
+                <span className="text-sm italic ">Full Stack Dev</span></p>
               </a>
             </div>
 
