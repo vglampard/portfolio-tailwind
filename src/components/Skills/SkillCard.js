@@ -23,7 +23,7 @@ import server from "../../icons/server.png";
 import aws from "../../icons/aws.png";
 import nostr from "../../icons/nostr.png";
 
-export function SkillCard(area) {
+export default function SkillCard(area) {
   const [seeMore, setSeeMore] = useState(false);
 
   function handleSeeMore() {
