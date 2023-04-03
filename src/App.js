@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="flex flex-col  mt-20 items-center justify-center ">
-      <div className="flex flex-col lg:justify-center lg:gap-5 lg:flex-row items-center justify-center">
+      <div className="flex flex-col  lg:justify-center lg:gap-5 lg:flex-row items-center justify-center">
         <motion.img
           src={pp}
           initial={{ x: -900 }}
@@ -38,12 +38,12 @@ function App() {
           className="w-[30%] md:w-[20%] lg:w-[20%] rounded-full  outline "
         ></motion.img>
         <motion.div
-          className="container pt-2 sm:flex-col flex items-start  justify-center  lg:max-w-[40%] w-[60%] "
+          className="container pt-2 sm:flex-col flex items-start  justify-center  lg:max-w-[40%] w-[60%]"
           initial="closed"
           animate="open"
           variants={sideVariants}
         >
-          <div className="flex flex-wrap flex-col justify-end ">
+          <div className="flex flex-wrap flex-col justify-end">
             {text.map(({ name, to, id, style }) => (
               <motion.p
                 key={id}

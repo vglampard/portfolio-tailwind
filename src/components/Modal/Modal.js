@@ -58,7 +58,7 @@ export default function Modal({ MODAL_STATES }) {
                     <MarkdownText text={project.writeup} />
                   </div>
                 </div>
-                <div className="w-full flex leading-tight p-4 items-center justify-center  text-base uppercase">
+                <div className="w-full flex leading-tight p-4 items-center justify-center  text-base uppercase whitespace-pre">
                   <a href={project.link} target="_blank" rel="noreferrer">
                     <p>| Live |</p>
                   </a>
