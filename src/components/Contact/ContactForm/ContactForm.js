@@ -55,34 +55,34 @@ type="success"
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-slate-200 rounded p-5"
+        className="bg-slate-200 rounded p-5 drop-shadow-md"
       >
         <input
           type="text"
           required
           name="user_name"
           placeholder="Name..."
-          className="boder-b  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 my-1 px-2 leading-tight focus:outline"
+          className="boder-b  bg-slate-50 drop-shadow  border-none w-full text-gray-700 mr-3 py-1 rounded my-1 px-2 leading-tight focus:outline"
         />
         <input
         required
           type="email"
           placeholder="Email..."
           name="user_email"
-          className="boder-b  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline"
+          className="boder-b drop-shadow rounded bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline"
         />
        
         <textarea
         required
           name="message"
-          className="rounded my-1  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 h-[200px] px-2 leading-tight focus:outline"
+          className="rounded my-1 drop-shadow  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 h-[200px] px-2 leading-tight focus:outline"
           placeholder="Message..."
         />
         <div className="w-full flex justify-end">
         <input
           type="submit"
           value="Send"
-          className=" bg-slate-50 border-none w-1/6 rounded text-gray-700 py-1 leading-tight hover:bg-white text-sm "
+          className=" bg-slate-50 transition ease-in-out duration-300 hover:scale-105 drop-shadow hover:bg-slate-800  hover:text-slate-50 hover:-translate-y-0.5 border-none w-1/6 rounded text-gray-700 py-1 leading-tight text-sm "
         />
         </div>
       </form>
