@@ -21,7 +21,7 @@ export const text = [
 ];
 
 export const icons = [
-  { name: "github", src: "github", link: "github.com/vglampard" },
+  { name: "github", src: "github", link: "https://github.com/vglampard" },
   {
     name: "wordpress",
     src: "wordpress",

@@ -29,17 +29,14 @@ function App() {
   return (
     <div className="flex flex-col  mt-20 items-center justify-center ">
       <div className="flex flex-col lg:justify-center lg:gap-5 lg:flex-row items-center justify-center">
-        
-        <motion.img src={pp}
-        initial={{ x: -900 }}
-        animate={{ x: 0 }}
-        transition={{ duration: 3 }}
+        <motion.img
+          src={pp}
+          initial={{ x: -900 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 3 }}
           alt="profile victoria lampard"
           className="w-[30%] md:w-[20%] lg:w-[20%] rounded-full  outline "
-        >
-       
-          
-        </motion.img>
+        ></motion.img>
         <motion.div
           className="container pt-2 sm:flex-col flex items-start  justify-center  lg:max-w-[40%] w-[60%] "
           initial="closed"
@@ -67,7 +64,7 @@ function App() {
             variants={sideVariants}
             initial={{ x: 900 }}
             animate={{ x: 0 }}
-            transition={{ duration: 3 }}
+            transition={{ duration: 2 }}
           >
             <span className="bg-slate-200 px-1 pb-1 text-lg">
               Linguist turned full stack developer,

@@ -5,3 +5,7 @@ It was interesting to explore the different hashing algorithms - **SHA256** was 
 - **Scripting** a sort of 'riffle shuffle' to blend these into the digest 
 
 The user adds their own salt each time, and I realised something approximating 'pepper' could be used if I take advantage of **environmental variables**. It was also nice to add a nice touch of **JS Particles** - I'd been tussling with it on other projects as the layering wasn't working out quite right. But I cracked it, and I like the way this turned out, especially with the **toast** detail. All in all, this was a nice toy project to dive into a bit of online security research, make a little tool that I actually am using quite frequently, as well as get some **design** practice in. 
+
+I shared it with my network for **feedback** and it was pointed out that not all passwords accept specific special characters, especially the underscore. So I added a modification that removes that option - BUT, realised that I'd painted myself into a corner. If the point is that this tool returns the same modified digest every time, I can't *change*, but can only *add alternatives to* the initial algorithm.
+
+If I were to be thinking about this app from a product mindset, this sort of breaking change could be implemented using **URI path versioning**. This is something I was looking at for a **JIRA ticket** on a **Scottish Tech Army** project, and seems theoretically appropriate here too. 
