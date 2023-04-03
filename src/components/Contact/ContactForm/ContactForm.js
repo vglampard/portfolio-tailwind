@@ -55,7 +55,7 @@ type="success"
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-slate-200 rounded p-5 drop-shadow-md"
+        className="bg-yellow-200 rounded p-5 drop-shadow-md"
       >
         <input
           type="text"
@@ -82,7 +82,7 @@ type="success"
         <input
           type="submit"
           value="Send"
-          className=" bg-slate-50 transition ease-in-out duration-300 hover:scale-105 drop-shadow hover:bg-slate-800  hover:text-slate-50 hover:-translate-y-0.5 border-none w-1/6 rounded text-gray-700 py-1 leading-tight text-sm "
+          className=" bg-slate-50 transition ease-in-out duration-300 hover:scale-105 drop-shadow hover:bg-slate-600  hover:text-slate-50 hover:-translate-y-0.5 border-none w-1/6 rounded text-gray-700 py-1 leading-tight text-sm "
         />
         </div>
       </form>

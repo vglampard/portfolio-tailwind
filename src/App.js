@@ -66,20 +66,20 @@ function App() {
             animate={{ x: 0 }}
             transition={{ duration: 2 }}
           >
-            <span className="bg-slate-200 px-1 pb-1 text-lg ">
+            <span className="bg-yellow-100 px-1 pb-1 text-lg ">
               Linguist turned full stack developer,
             </span>{" "}
             I'm a proactive problem-solver, an adept communicator, and committed
             to rapid career development. Have a browse of my{" "}
-            <Link to="projects" className="  bg-slate-200 px-1 pb-1 ">
+            <Link to="projects" className="  bg-yellow-100 px-1 pb-1 ">
               projects
             </Link>
             , see the{" "}
-            <Link to="skills" className=" bg-slate-200 px-1 pb-1 ">
+            <Link to="skills" className=" bg-yellow-100 px-1 pb-1 ">
               skills
             </Link>{" "}
             I'm developing, and{" "}
-            <Link to="contact" className=" bg-slate-200 px-1 pb-1 ">
+            <Link to="contact" className=" bg-yellow-100 px-1 pb-1 ">
               get in touch!
             </Link>
           </motion.p>
@@ -95,7 +95,7 @@ function App() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 3 }}
-              className="w-10"
+              className="w-10 drop-shadow-xl "
             >
               {" "}
               <img key={icon.name} src={IMAGES[icon.src]} alt={icon.name} />

@@ -15,17 +15,18 @@ export default function Navbar({ fixed }) {
                 <img
                   src={logo}
                   alt="Victoria Lampard full stack developer"
-                  className="h-[50px]"
-                />
+                  className="h-[50px] drop-shadow-lg"
+                 />
               </a>
               <a
-                className="text-lg font-thin leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-900"
-                href="/"
+                className="text-lg font-bold leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-900 [text-shadow:_0_07px_0_rgb(254_243_199_/_100%)] "
+                href="/" 
               >
                 {" "}<p>
                 Victoria Lampard <br></br>
-                <span className="text-sm italic ">Full Stack Dev</span></p>
+                <span className="text-sm italic " >Full Stack Dev</span></p>
               </a>
+          
             </div>
 
             <button
