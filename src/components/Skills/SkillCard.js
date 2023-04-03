@@ -30,7 +30,7 @@ export default function SkillCard(area) {
     setSeeMore(!seeMore);
   }
 
-  // Object containng images to be conditoinally rendered as the code below maps over the skills array
+  // Object containng images to be conditionally rendered as the code below maps over the skills array
   const ICON_REF = {
     frontEnd: { javascript, html, css, react, typescript },
     backEnd: { sql, api, node, aws, server },
@@ -40,11 +40,11 @@ export default function SkillCard(area) {
   };
 
   return (
-    <div className="bg-slate-100  flex-col p-1 rounded drop-shadow-lg flex justify-center items-center w-full">
+    <div className="bg-slate-100 flex-col p-2 rounded drop-shadow-lg flex justify-center items-center w-full">
       <div className="">
         <h1
           onClick={handleSeeMore}
-          className="text-base  hover:cursor-pointer w-full leading-tight inline-block  pb-2 pl-1  text-slate-900 "
+          className="text-base  hover:cursor-pointer w-full leading-tight inline-block  pb-2 pl-1 transition ease-in-out duration-300 hover:-translate-y-0.5   text-slate-900 "
         > SEE {" "}
           {area.skill.area}<span className="animate-pulse text-xl ">
           {seeMore ? " <<<" : " >>>"}</span>
@@ -63,7 +63,7 @@ export default function SkillCard(area) {
       
         </div>
       </div>
-      {seeMore && <p className="px-4 text-sm m-2 italic ">{area.skill.subskills}</p>}
+      {seeMore && <p className="px-4 text-sm m-2 italic text-justify ">{area.skill.subskills}</p>}
     </div>
   );
 }

@@ -1,10 +1,5 @@
 body{
-    /* background-color: white; 
-    background: url("./vgl.png"); 
-    background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;  */
+    background-color: rgb(240, 246, 250)
 }
 @tailwind base;
 @tailwind components;

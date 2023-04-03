@@ -6,10 +6,10 @@ export default function Footer() {
   return (
     <footer
       class="bg-slate-100
-             border-t-1
+             border-t-2  border-slate-300
              fixed
              inset-x-0
-             bottom-0 outline-1 outline 
+             bottom-0  
              "
     >
       <div class="w-full mx-auto container md:p-4 p-4 md:flex md:items-center md:justify-between ">

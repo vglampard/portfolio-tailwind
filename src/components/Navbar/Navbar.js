@@ -22,14 +22,18 @@ export default function Navbar({ fixed }) {
                 className="text-lg font-thin leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-900"
                 href="/"
               >
-                {" "}
+                {" "}<p>
                 Victoria Lampard <br></br>
-                <span className="text-sm">Full Stack Dev</span>
+                <span className="text-sm italic ">Full Stack Dev</span></p>
               </a>
             </div>
 
             <button
-              className="text-slate-900 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="text-slate-900 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none 
+            
+              transition ease-in-out duration-300 hover:scale-140 hover:-translate-y-0.5 
+              
+              "
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
