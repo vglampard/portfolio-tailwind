@@ -1,5 +1,5 @@
 import React from "react";
-import SkillCard from "./SkillCard.js";
+import SkillCard from "./skillCard";
 import { SKILLS } from "../../constants/skillsData";
 
 export default function Skills() {
