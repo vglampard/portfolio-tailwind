@@ -12,7 +12,7 @@ export const text = [
       "text-[18px] lg:text-2xl font-thin  leading-tight  whitespace-pre rounded  flex  items-center justify-end",
   },
   {
-    name: "Welcome to my portfolio.  > ",
+    name: "Welcome to my portfolio  > ",
     id: 3,
     style:
       "text-base sm:text-sm lg:text-xl  font-thin  leading-tight rounded flex justify-end flex-wrap  ",
@@ -21,7 +21,7 @@ export const text = [
 ];
 
 export const icons = [
-  { name: "github", src: "github", link: "github.com/vglampard" },
+  { name: "github", src: "github", link: "https://github.com/vglampard" },
   {
     name: "wordpress",
     src: "wordpress",

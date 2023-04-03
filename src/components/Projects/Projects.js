@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <div className="flex justify-center items-center h-[100%] pt-14">
       <Modal MODAL_STATES={MODAL_STATES} />
-      <div className="w-[80%] lg:w-[70%] grid grid-cols-1 md:grid-cols-2 space-x-{10} gap-5 pb-20">
+      <div className="w-[90%] lg:w-[70%] grid grid-cols-1 md:grid-cols-2 space-x-{10} gap-5 pb-20">
         {PROJECTS.map((project) => (
           <p className="text-sm">
             <ProjectsCard project={project} MODAL_STATES={MODAL_STATES} />

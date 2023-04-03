@@ -59,11 +59,13 @@ type="success"
       >
         <input
           type="text"
+          required
           name="user_name"
           placeholder="Name..."
           className="boder-b  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 my-1 px-2 leading-tight focus:outline"
         />
         <input
+        required
           type="email"
           placeholder="Email..."
           name="user_email"
@@ -71,8 +73,9 @@ type="success"
         />
        
         <textarea
+        required
           name="message"
-          className="rounded my-1  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline"
+          className="rounded my-1  bg-slate-50 border-none w-full text-gray-700 mr-3 py-1 h-[200px] px-2 leading-tight focus:outline"
           placeholder="Message..."
         />
         <div className="w-full flex justify-end">
