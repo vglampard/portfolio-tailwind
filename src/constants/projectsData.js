@@ -1,3 +1,4 @@
+// Data used to render the different project cards and populate the modal
 export const PROJECTS = [
   {
     title: "Amigo",

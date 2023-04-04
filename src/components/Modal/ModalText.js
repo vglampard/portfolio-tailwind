@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Markdown from "markdown-to-jsx";
 
+// Component that takes the correct project markdown file and renders its contents in JSX
 export default function MarkdownText({text}) {
   const [post, setpost] = useState("");
 

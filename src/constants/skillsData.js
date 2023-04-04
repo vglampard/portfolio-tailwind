@@ -1,3 +1,4 @@
+// Data used to render the skills cards
 export const SKILLS = [
   {
     area: "Front End",

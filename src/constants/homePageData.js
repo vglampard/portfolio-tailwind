@@ -1,3 +1,4 @@
+// Text rendered in moving divs on home screen
 export const text = [
   {
     name: "Victoria Lampard  > > >",
@@ -17,9 +18,9 @@ export const text = [
     style:
       "text-base sm:text-sm lg:text-xl  font-thin  leading-tight rounded flex justify-end flex-wrap  ",
   },
-
 ];
 
+// Icons rendered with fade-in divs on home screen
 export const icons = [
   { name: "github", src: "github", link: "https://github.com/vglampard" },
   {
