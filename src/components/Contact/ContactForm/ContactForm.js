@@ -13,15 +13,15 @@ export const ContactForm = ({notify}) => {
   // function that sends contact email to emailjs for it to be sent to my inbox, clears the form, and triggers the toast notification;
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUB_KEY).then(
-    //   (result) => {
-    //     console.log(result.text);
-    //   },
-    //   (error) => {
-    //     console.log(error.text);
-    //   }
-    // );
-    // form.current.reset();
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUB_KEY).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    form.current.reset();
     notify();
   };
 
