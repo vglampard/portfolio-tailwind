@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./lv.png";
-
 //[text-shadow:_0_07px_0_rgb(254_243_199_/_100%)] 
 
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline w-[100%] bg-slate-100 mb-1">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline w-[100%] bg-sky-900 mb-1">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <div className="flex items-center gap-3">
@@ -21,10 +20,10 @@ export default function Navbar({ fixed }) {
                  />
               </a>
               <a
-                className="text-lg  leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-900 "
+                className="text-lg  leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-200 "
                 href="/" 
               >
-                {" "}<p><span className = "[text-shadow:_0_03px_0_rgb(254_243_199_/_100%)] ">
+                {" "}<p><span className = "">
                 Victoria Lampard </span><br></br>
                 <span className="text-sm italic " >Full Stack Dev</span></p>
               </a>
@@ -50,30 +49,30 @@ export default function Navbar({ fixed }) {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto text-slate-200 ">
               <li className="nav-item">
                 <Link
                   to="projects"
-                  className="px-3 py-2 pt-4 md:pt-2 lg:pt-2 flex items-center text-xs uppercase font-thin leading-snug  text-slate-900 hover:opacity-75"
+                  className="px-3 py-2 pt-4 md:pt-2 lg:pt-2 flex items-center text-xs uppercase font-thin leading-snug   "
                 >
-                  <p className="hover:bg-yellow-100 px-1">Projects</p>
+                  <p className="hover:bg-yellow-100 hover:text-slate-800 px-1">Projects</p>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
                   to="skills"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-thin leading-snug text-slate-900hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-thin leading-snug "
                 >
-                     <p className="hover:bg-yellow-100 px-1">Skills</p>
+                     <p className="hover:bg-yellow-100 hover:text-slate-800  px-1">Skills</p>
                 </Link>
               </li>
          
               <li className="nav-item">
                 <Link
                   to="contact"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-thin leading-snug text-slate-900 hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-thin leading-snug "
                 >
-                   <p className="hover:bg-yellow-100 px-1">Contact</p>
+                   <p className="hover:bg-yellow-100 px-1 hover:text-slate-800 ">Contact</p>
                 </Link>
               </li>{" "}
             </ul>

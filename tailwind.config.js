@@ -6,6 +6,11 @@ module.exports = {
     //   'hero-pattern': "url('/marble.png')",
     //   // 'footer-texture': "url('/img/footer-texture.png')",
     // }},
+    // colors: {
+    //   "prim": {
+
+    //   }
+    // }
   },
   plugins: [require('@tailwindcss/typography')],
 }
