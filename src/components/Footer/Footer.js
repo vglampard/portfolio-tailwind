@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer
       class="bg-sky-900
-             border-t-2  border-slate-300
+       
              fixed
              inset-x-0
              bottom-0  

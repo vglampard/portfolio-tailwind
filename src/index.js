@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AboutMe from "./components/AboutMe/AboutMe";
+// import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
@@ -22,7 +22,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="projects" element={<Projects />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="aboutme" element={<AboutMe />} />
+      {/* <Route path="aboutme" element={<AboutMe />} /> */}
       <Route path="skills" element={<Skills />} />
     </Routes>
     </div>

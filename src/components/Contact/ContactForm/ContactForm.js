@@ -55,8 +55,9 @@ type="success"
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="bg-yellow-200 rounded p-5 drop-shadow-md"
+        className="bg-yellow-100 rounded p-5 drop-shadow-md"
       >
+        
         <input
           type="text"
           required
