@@ -25,7 +25,7 @@ export default function Modal({ MODAL_STATES }) {
           <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
             <div className="relative w-auto my-6 h-[100%]  mx-auto max-w-3xl">
               {/*content*/}
-              <div className="border-0 rounded shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+              <div className="border-0 rounded shadow-lg relative flex flex-col  bg-white outline-none focus:outline-none  w-[70vw]">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
                   <div className="flex flex-col">
@@ -46,8 +46,8 @@ export default function Modal({ MODAL_STATES }) {
                 </div>
                 {/*body*/}
               
-                <div className="relative p-6 pt-2 flex-auto w-full">
-                  <div className="max-w-[469px]"> 
+                <div className="relative p-6 pt-2  flex justify-center w-full ">
+                  <div className="max-w-[469px] "> 
                   <p className="text-sm font-thin italic leading-tight inline-block mr-4 py-1 text-justify text-slate-900">
                     {project.description}{" "}
                   </p>
