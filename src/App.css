@@ -12,3 +12,11 @@ h1{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+    .font-outline-2 {
+      -webkit-text-stroke: 1px rgb(254, 243, 199);
+    }
+    .font-outline-4 {
+      -webkit-text-stroke: 4px black;
+    }
+  }

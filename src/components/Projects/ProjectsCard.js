@@ -29,11 +29,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
 
   return (
     <div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1}}
-        transition={{ duration: 0.5 }}
-      >
+     
         <div className="bg-slate-50 py-2 m-2 rounded drop-shadow-lg">
           <img src={IMAGES[project.image]} alt="project" className="rounded-t"  />
           <div className="flex justify-between  flex-col">
@@ -60,19 +56,21 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
                 <p className=" text-sm font-thin leading-tight inline-block  text-slate-900 ease-linear">
                   {project.subtitle}
                 </p>
+                <div className="w-full flex justify-end">
                 <p
-                  className=" text-slate-900 uppercase text-sm rounded  hover:cursor-pointer transition ease-in-out duration-300 hover:scale-140 hover:-translate-y-0.5  outline-none justify-center focus:outline-none flex items-center  my-1"
+                  className=" text-slate-900 uppercase text-sm   hover:cursor-pointer transition ease-in-out duration-300 hover:scale-140 hover:-translate-y-0.5  outline-none justify-center focus:outline-none flex items-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-yellow-100 my-1 px-3 w-[120px]"
                  
                   onClick={handleOpenModal}
                 >
                 Read more...
                 </p>
+                </div>
                  </div>
               </motion.div>
             )}
           </div>
         </div>
-      </motion.div>
+     
     </div>
   );
 }
