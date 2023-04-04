@@ -5,7 +5,7 @@ import linkedin from "../../icons/linkedin-logo.png"
 export default function Footer() {
   return (
     <footer
-      class="bg-slate-100
+      class="bg-sky-900
              border-t-2  border-slate-300
              fixed
              inset-x-0

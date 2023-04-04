@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     title: "Amigo",
-    subtitle: "Personalised travel companion",
+    subtitle: "Full stack travel companion app devised to meet the brief: 'build an app that fixes a problem'. Full software development lifecyle completed over month-long agile project in team of six. ",
     writeup:
       "MDamigo",
     image: "amigo",
@@ -10,11 +10,11 @@ export const PROJECTS = [
     github:
       "https://github.com/SchoolOfCode/bc13_final-project_back-end-3-amigos",
     description:
-      "Users can access left-of-field city sightseeing recommendations, save them in a private favourites dashboard, and privately journal about their travels.",
+      "With the Amigo app, users can access left-of-field city sightseeing recommendations from arund the world, save them in a private favourites dashboard for future reference, and record their memories in a private journal.",
   },
   {
     title: "Nostrami",
-    subtitle: "Nostr client (in development)",
+    subtitle: "Nostr client currently in development: subscribes to a global relay of long-form content as part of the decentralised Nostr project. ",
     writeup:
       "MDnostrami",
     image: "nostrami",
@@ -26,7 +26,7 @@ export const PROJECTS = [
   },
   {
     title: "The PayBack Machine",
-    subtitle: "Advanced bill settlements",
+    subtitle: "Scripting exercise that solves the issue of how to manage more complex bill settlements: when money's already been paid, and you can't be bothered to do more than one transaction. ",
     writeup:
       "MDpayback",
     image: "payback",
@@ -38,7 +38,7 @@ export const PROJECTS = [
   },
   {
     title: "BetterPassword",
-    subtitle: "SHA-256 password retrieval tool",
+    subtitle: "Scripting and research exercise: it's a tool allowing users to create and easily retrieve secure passwords that incorporate SHA-256 hashing, salting, and peppering. ",
     writeup:
       "MDpassword",
     image: "password",
@@ -50,7 +50,7 @@ export const PROJECTS = [
   },
   {
     title: "WeatherVisuals",
-    subtitle: "Dynamic weather display",
+    subtitle: "Weather app that renders dynamic visuals to accompany weather data from across the globe. ",
     writeup:
       "MDweather",
     image: "weather",
@@ -62,7 +62,7 @@ export const PROJECTS = [
   },
   {
     title: "Otta Internal Tool",
-    subtitle: "Automating company research",
+    subtitle: "Simple tool that automates away monotonous parts of the research process for the Otta content team.  ",
     writeup:
       "MDotta",
     image: "otta",

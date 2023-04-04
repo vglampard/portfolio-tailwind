@@ -1,6 +1,14 @@
 body{
-    background-color: rgb(240, 246, 250)
+    background-color: rgb(240, 246, 250);
+    
+    
+      
 }
+
+h1{
+    text-shadow: 2px 2px rgb(254, 243, 199);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
