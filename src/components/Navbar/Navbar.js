@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./lv.png";
 
+//[text-shadow:_0_07px_0_rgb(254_243_199_/_100%)] 
+
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
@@ -19,7 +21,7 @@ export default function Navbar({ fixed }) {
                  />
               </a>
               <a
-                className="text-lg font-bold leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-900 [text-shadow:_0_07px_0_rgb(254_243_199_/_100%)] "
+                className="text-lg font-bold leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-900 "
                 href="/" 
               >
                 {" "}<p>
@@ -48,13 +50,13 @@ export default function Navbar({ fixed }) {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto ">
               <li className="nav-item">
                 <Link
                   to="projects"
-                  className="px-3 py-2 pt-4 md:pt-2 lg:pt-2 flex items-center text-xs uppercase font-thin leading-snug text-slate-900 hover:opacity-75"
+                  className="px-3 py-2 pt-4 md:pt-2 lg:pt-2 flex items-center text-xs uppercase font-thin leading-snug  text-slate-900 hover:opacity-75"
                 >
-                  Projects
+                  <p className="hover:bg-yellow-100 px-1">Projects</p>
                 </Link>
               </li>
               <li className="nav-item">
@@ -62,23 +64,16 @@ export default function Navbar({ fixed }) {
                   to="skills"
                   className="px-3 py-2 flex items-center text-xs uppercase font-thin leading-snug text-slate-900hover:opacity-75"
                 >
-                  Skills
+                     <p className="hover:bg-yellow-100 px-1">Skills</p>
                 </Link>
               </li>
-              {/* <li className="nav-item">
-                <Link
-                  to="aboutme"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-thin leading-snug text-slate-900 hover:opacity-75"
-                >
-                  About Me
-                </Link>
-              </li> */}
+         
               <li className="nav-item">
                 <Link
                   to="contact"
                   className="px-3 py-2 flex items-center text-xs uppercase font-thin leading-snug text-slate-900 hover:opacity-75"
                 >
-                  Contact
+                   <p className="hover:bg-yellow-100 px-1">Contact</p>
                 </Link>
               </li>{" "}
             </ul>
