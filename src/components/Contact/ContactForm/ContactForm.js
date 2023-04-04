@@ -1,60 +1,33 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 //Component that takes form input and connects with emailjs to send email to my personal inbox, and includes a toast notification that the email has been sent. 
 
-export const ContactForm = () => {
+export const ContactForm = ({notify}) => {
   // imports needed to link up form to emailjs service
   const PUB_KEY = process.env.REACT_APP_PUBLIC_KEY;
   const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
   const form = useRef();
 
-  // Funciton that triggers toast notification
-  const notify = () =>
-    toast("EMAIL SENT", {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-
   // function that sends contact email to emailjs for it to be sent to my inbox, clears the form, and triggers the toast notification;
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUB_KEY).then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-    form.current.reset();
+    // emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUB_KEY).then(
+    //   (result) => {
+    //     console.log(result.text);
+    //   },
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    // );
+    // form.current.reset();
     notify();
   };
 
   return (
     <>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-        type="success"
-      />
+      
       <form
         ref={form}
         onSubmit={sendEmail}

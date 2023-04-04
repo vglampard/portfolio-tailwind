@@ -55,11 +55,11 @@ export default function Navbar({ fixed }) {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex text-base flex-col lg:flex-row list-none lg:ml-auto text-slate-200 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            <ul className="flex text-base flex-col lg:flex-row list-none lg:ml-auto text-slate-200 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] uppercase">
               <li className="nav-item">
                 <Link
                   to="projects"
-                  className="px-3 py-2 pt-4 md:pt-2 lg:pt-2 flex items-center text-xs uppercase  leading-snug   "
+                  className="px-3 py-2 pt-4 md:pt-2 lg:pt-2 flex items-center uppercase  leading-snug   "
                 >
                   <p className="hover:bg-yellow-100  hover:text-slate-800 px-1 ">
                     Projects
@@ -69,7 +69,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <Link
                   to="skills"
-                  className="px-3 py-2 flex items-center text-xs uppercase  leading-snug "
+                  className="px-3 py-2 flex items-center   leading-snug "
                 >
                   <p className="hover:bg-yellow-100 hover:text-slate-800  px-1">
                     Skills
@@ -79,7 +79,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <Link
                   to="contact"
-                  className="px-3 py-2 flex items-center text-xs uppercase  leading-snug "
+                  className="px-3 py-2 flex items-center   leading-snug "
                 >
                   <p className="hover:bg-yellow-100 px-1 hover:text-slate-800 ">
                     Contact

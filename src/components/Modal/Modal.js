@@ -26,7 +26,7 @@ export default function Modal({ MODAL_STATES }) {
       {MODAL_STATES.showModal ? (
         <>
           <div className=" justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none ">
-            <div className="relative w-auto my-6 h-[100%]  mx-auto max-w-3xl">
+            <div className="relative w-auto my-6 h-[100%]  mx-auto">
               {/*content*/}
               <div className="border-0 rounded shadow-lg relative flex flex-col  bg-white outline-none focus:outline-none  lg:w-[70vw]">
                 {/*header*/}
