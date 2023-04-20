@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import password from "./projectImages/password.webp";
-import amigo from "./projectImages/amigo.webppassword.webp";
-import nostrami from "./projectImages/nostrami.webppassword.webp";
-import payback from "./projectImages/payback.webppassword.webp";
-import weather from "./projectImages/weather.webppassword.webp";
-import otta from "./projectImages/otta.webppassword.webp";
+import amigo from "./projectImages/amigo.webp";
+import nostrami from "./projectImages/nostrami.webp";
+import payback from "./projectImages/payback.webp";
+import weather from "./projectImages/weather.webp";
+import otta from "./projectImages/otta.webp";
 
 // Project card component containing a project image, a short description that drops down with a fade-in effect when the user clicks the project title, and a button that opens the top-level modal and passes the project data to it
 export default function ProjectsCard({ project, MODAL_STATES }) {
