@@ -35,7 +35,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
 
   return (
     <div>
-      <div className=" outline outline-1 pb-2 m-2 rounded drop-shadow-lg">
+      <div className=" outline outline-1 bg-yellow-50 pb-2 m-2 rounded drop-shadow-lg">
         <img src={IMAGES[project.image]} alt="project" className="rounded-t" />
         <div className="flex justify-between  flex-col">
           <h1

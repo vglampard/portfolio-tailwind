@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "./lv.png";
 //[text-shadow:_0_07px_0_rgb(254_243_199_/_100%)]
 // drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
-
+//drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
@@ -26,11 +26,11 @@ export default function Navbar({ fixed }) {
               >
                 {" "}
                 <p>
-                  <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                  <span className="">
                     Victoria Lampard{" "}
                   </span>
                   <br></br>
-                  <span className="text-base font-thin italic font-outline-2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                  <span className="text-base font-bold italic ">
                     Full Stack Dev
                   </span>
                 </p>

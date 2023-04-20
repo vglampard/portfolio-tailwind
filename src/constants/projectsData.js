@@ -11,7 +11,7 @@ export const PROJECTS = [
     github:
       "https://github.com/SchoolOfCode/bc13_final-project_back-end-3-amigos",
     description:
-      "With the Amigo app, users can access left-of-field city sightseeing recommendations from arund the world, save them in a private favourites dashboard for future reference, and record their memories in a private journal.",
+      "With the Amigo app, users can access left-of-field city sightseeing recommendations from around the world, save them in a private favourites dashboard for future reference, and record their memories in a private journal.",
   },
   {
     title: "Nostrami",
@@ -23,7 +23,7 @@ export const PROJECTS = [
     github: "https://github.com/vglampard/nostr-client-test",
     stack: "| JavaScript | React | Tailwind | Nostr |",
     description:
-      "Simple Nostr client (work in progress) that pulls NIP-23 events from the Damus relay and displays them as pop-out cards (with an additional and highly rudimentary translation tool for foreign language posts!).",
+      "Simple Nostr client (work in progress) that pulls NIP-23 events from the Damus relay and displays them as pop-out cards (with an additional and highly rudimentary translation tool for foreign language posts).",
   },
   {
     title: "The PayBack Machine",
@@ -59,7 +59,7 @@ export const PROJECTS = [
     github: "https://github.com/vglampard/weather-app",
     stack: "| TypeScript | TSParticles | React | CSS |",
     description:
-      "Classic TypeScript weather app pulling information from OpenWeatherMap. Spiced up with a bit of dynamic weather display (I added some buttons to help users find snowy/rainy places because I desparately wanted to show off the effects, but adding an onClick to turn on the weather effects felt like cheating).",
+      "Classic TypeScript weather app pulling information from OpenWeatherMap. Spiced up with a bit of dynamic weather display (I added some buttons to help users find snowy/rainy places because I wanted to show off the effects, but adding an onClick to turn on the weather effects felt like cheating).",
   },
   {
     title: "Otta Internal Tool",
