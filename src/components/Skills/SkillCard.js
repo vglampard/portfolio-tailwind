@@ -44,37 +44,35 @@ export default function SkillCard(area) {
   };
 
   return (
-    <div className="bg-slate-100 flex-col p-2 rounded drop-shadow-lg flex justify-center items-center w-full">
-      <div className="">
+    <div className="bg-white flex-col  rounded drop-shadow-lg flex justify-center items-center w-full">
+      <div className="w-full flex items-start bg-yellow-100 p-1">
         <h1
           onClick={handleSeeMore}
-          className="text-base  hover:cursor-pointer w-full leading-tight inline-block  pb-2 pl-1 transition ease-in-out duration-300 hover:-translate-y-0.5   text-slate-900 "
+          className=" flex justify-start font-bold italic text-left uppercase leading-tight  text-slate-900 "
         >
           {" "}
-          SEE {area.skill.area}
-          <span className="animate-pulse text-xl ">
-            {seeMore ? " <<<" : " >>>"}
-          </span>
+          {area.skill.area}
         </h1>
-        {/* Icons are rendered here by matching the skill area handed down in the skill object with the icons stored in the Icon object defined above */}
-        <div className="flex flex-row gap-2 m-1 w-full align-center justify-end">
-          {area.skill.icons.map((icon) => {
-            return (
-              <img
-                src={ICON_REF[area.skill.ref][icon]}
-                alt={area.skill.ref}
-                className="max-h-6"
-              />
-            );
-          })}
-        </div>
       </div>
+
       {/* Rendering a list of subskills as handed down from the skills area object */}
-      {seeMore && (
-        <p className="px-4 text-sm m-2 italic text-justify ">
-          {area.skill.subskills}
-        </p>
-      )}
+      <p className="px-4 text-sm m-2 italic text-justify ">
+        {area.skill.subskills}
+      </p>
+
+      {/* Icons are rendered here by matching the skill area handed down in the skill object with the icons stored in the Icon object defined above */}
+
+      <div className="flex flex-row gap-2 p-1 m-1 w-full align-center justify-end">
+        {area.skill.icons.map((icon) => {
+          return (
+            <img
+              src={ICON_REF[area.skill.ref][icon]}
+              alt={area.skill.ref}
+              className="max-h-6"
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
