@@ -35,7 +35,7 @@ export default function Contact() {
         type="success"
       />
       <div className="md:w-[500px] ">
-      <h1 className="italic uppercase text-left font-thin pl-4 w-full"> Get in touch... </h1>
+      <h1 className="italic text-2xl uppercase text-left font-thin pl-4 w-full"> Get in touch... </h1>
       <ContactForm notify={notify} />
       </div>
     </div>

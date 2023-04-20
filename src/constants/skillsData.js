@@ -4,7 +4,7 @@ export const SKILLS = [
     area: "Front End",
     ref: "frontEnd",
     subskills:
-      " JavaScript, HTML, CSS, TypeScript, React, Next.js, Tailwind, MUI, Figma, Redux, UI /UX",
+      " JavaScript, HTML, CSS, TypeScript, React, Angular, Next.js, Tailwind, MUI, Figma, Redux, UI /UX",
     icons: ["typescript", "javascript", "html", "react", "css"],
   },
 
