@@ -10,9 +10,9 @@ function App() {
   const sideVariants = {
     open: {
       transition: {
-        staggerChildren: 0.5,
+        staggerChildren: 0.2,
         staggerDirection: 1,
-        duration: 5,
+        duration: 3,
       },
     },
   };
@@ -33,7 +33,7 @@ function App() {
           src={pp}
           initial={{ x: -900 }}
           animate={{ x: 0 }}
-          transition={{ duration: 3 }}
+          transition={{ duration: 1 }}
           alt="profile victoria lampard"
           className="w-[30%] md:w-[20%] lg:w-[20%] rounded-full  outline drop-shadow-xl"
         ></motion.img>
@@ -48,7 +48,7 @@ function App() {
               <motion.p
                 key={id}
                 variants={itemVariants}
-                transition={{ duration: 2 }}
+                transition={{ duration: 1 }}
                 className={style}
               >
                 {name}
@@ -61,26 +61,34 @@ function App() {
         <div className="p-5 text-justify lg:w-[50vw] md:w-[50vw]">
           <motion.p
             target="_blank"
-            variants={sideVariants}
             initial={{ x: 900 }}
             animate={{ x: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
           >
             <span className="bg-yellow-100 px-1 pb-1 text-lg ">
               Linguist turned full stack developer,
             </span>{" "}
             I'm a proactive problem-solver, an adept communicator, and committed
             to rapid career development. Have a browse of my{" "}
-            <Link to="projects" className="  bg-yellow-100 px-1 pb-1 ">
+            <Link
+              to="projects"
+              className="  bg-yellow-100 px-1 pb-1   hover:underline"
+            >
               projects
             </Link>
             , see the{" "}
-            <Link to="skills" className=" bg-yellow-100 px-1 pb-1 ">
+            <Link
+              to="skills"
+              className=" bg-yellow-100 px-1 pb-1   hover:underline"
+            >
               skills
             </Link>{" "}
             I'm developing, and{" "}
-            <Link to="contact" className=" bg-yellow-100 px-1 pb-1 ">
-              get in touch!
+            <Link
+              to="contact"
+              className=" bg-yellow-100 px-1 pb-1  hover:underline"
+            >
+              get in touch...
             </Link>
           </motion.p>
         </div>
@@ -94,8 +102,8 @@ function App() {
               variants={sideVariants}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 3 }}
-              className="w-10 drop-shadow-xl "
+              transition={{ duration: 1 }}
+              className="w-10 drop-shadow-xl hover:translate-y-0.5   "
             >
               {" "}
               <img key={icon.name} src={IMAGES[icon.src]} alt={icon.name} />

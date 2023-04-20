@@ -4,19 +4,19 @@ export const text = [
     name: "Victoria Lampard  > > >",
     id: 1,
     style:
-      "text-[20px] lg:text-3xl leading-tight   flex justify-end items-center ",
+      "text-[28px] lg:text-4xl sm:text-2xl leading-tight   flex justify-end items-center ",
   },
   {
-    name: "Full Stack Developer  > >",
-    id: 2,
-    style:
-      "text-[18px] lg:text-2xl font-thin  leading-tight  whitespace-pre rounded  flex  items-center justify-end",
-  },
-  {
-    name: "Welcome to my portfolio  > ",
+    name: "Node | Express | Postgres | React > > ",
     id: 3,
     style:
-      "text-base sm:text-sm lg:text-xl  font-thin  leading-tight rounded flex justify-end flex-wrap  ",
+    " text-base md:text-[18px] lg:text-xl  font-thin  leading-tight rounded flex justify-end flex-wrap  ",
+  },
+  {
+    name: "Full Stack Developer  > ",
+    id: 2,
+    style:
+      "text-base  lg:text-2xl font-thin  leading-tight  whitespace-pre rounded  flex  items-center justify-end",
   },
 ];
 
