@@ -5,7 +5,7 @@ import linkedin from "../../icons/linkedin-logo.png";
 export default function Footer() {
   return (
     <footer
-      class="bg-sky-900
+      class="
        
              fixed
              inset-x-0
@@ -24,7 +24,7 @@ export default function Footer() {
               <img
                 src={github}
                 alt=" Victoria Lampard github link"
-                className="w-5"
+                className="w-5 hover:translate-y-0.5  "
               />
             </a>
           </li>
@@ -38,7 +38,7 @@ export default function Footer() {
               <img
                 src={linkedin}
                 alt=" Victoria Lampard LinkedIn link"
-                className="w-5"
+                className="w-5 hover:translate-y-0.5  "
               />
             </a>
           </li>

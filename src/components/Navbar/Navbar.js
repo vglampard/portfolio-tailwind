@@ -2,34 +2,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./lv.png";
 //[text-shadow:_0_07px_0_rgb(254_243_199_/_100%)]
-
+// drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
+//drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline w-[100%] bg-sky-900 mb-1 drop-shadow-xl">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline outline-2 w-[100%] bg-yellow-100 mb-1 drop-shadow-xl">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 ">
               <a href="/">
                 {" "}
                 <img
                   src={logo}
                   alt="Victoria Lampard full stack developer"
-                  className="h-[50px] drop-shadow-[0_5px_5px_rgba(254_243_199_/_100%)]"
+                  className="h-[50px] drop-shadow-lg pb-1"
                 />
               </a>
               <a
-                className="text-lg  leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-200 "
+                className="text-lg  leading-4 inline-block mr-4 py-2  whitespace-nowrap uppercase text-slate-800 "
                 href="/"
               >
                 {" "}
                 <p>
-                  <span className="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                  <span className="">
                     Victoria Lampard{" "}
                   </span>
                   <br></br>
-                  <span className="text-base font-thin italic font-outline-2 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                  <span className="text-base font-bold italic ">
                     Full Stack Dev
                   </span>
                 </p>
@@ -37,10 +38,9 @@ export default function Navbar({ fixed }) {
             </div>
 
             <button
-              className="text-yellow-100 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none 
-      
-              transition ease-in-out duration-300 hover:scale-140 hover:-translate-y-0.5 
-              drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
+              className="text-slate-900 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none 
+              hover:translate-y-0.5  
+             
               "
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
@@ -55,13 +55,13 @@ export default function Navbar({ fixed }) {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex text-base flex-col lg:flex-row list-none lg:ml-auto text-slate-200 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] uppercase">
+            <ul className="flex text-base flex-col lg:flex-row list-none lg:ml-auto text-slate-800  uppercase">
               <li className="nav-item">
                 <Link
                   to="projects"
                   className="px-3 py-2 pt-4 md:pt-2 lg:pt-2 flex items-center uppercase  leading-snug   "
                 >
-                  <p className="hover:bg-yellow-100  hover:text-slate-800 px-1 ">
+                  <p className="hover:bg-slate-800  hover:text-slate-50 px-1 ">
                     Projects
                   </p>
                 </Link>
@@ -71,7 +71,7 @@ export default function Navbar({ fixed }) {
                   to="skills"
                   className="px-3 py-2 flex items-center   leading-snug "
                 >
-                  <p className="hover:bg-yellow-100 hover:text-slate-800  px-1">
+                  <p className="hover:bg-slate-800  hover:text-slate-50  px-1">
                     Skills
                   </p>
                 </Link>
@@ -81,7 +81,7 @@ export default function Navbar({ fixed }) {
                   to="contact"
                   className="px-3 py-2 flex items-center   leading-snug "
                 >
-                  <p className="hover:bg-yellow-100 px-1 hover:text-slate-800 ">
+                  <p className="hover:bg-slate-800  hover:text-slate-50 px-1 px-1">
                     Contact
                   </p>
                 </Link>
