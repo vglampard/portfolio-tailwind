@@ -26,6 +26,18 @@ export const PROJECTS = [
       "Simple Nostr client (work in progress) that pulls NIP-23 events from the Damus relay and displays them as pop-out cards (with an additional and highly rudimentary translation tool for foreign language posts).",
   },
   {
+    title: "Poképedia",
+    subtitle: "Classic PokéAPI project delivering a searchable, browsable collection of Pokékemon that detail their specific attributes, skills, and locations.",
+    writeup:
+      "MDpokepedia",
+    image: "pokepedia",
+    link: "https://pokepedia-angular.netlify.app/",
+    github: "https://github.com/vglampard/pokemon-angular",
+    stack: "| TypeScript | Angular | Bootstrap |",
+    description:
+      "It's a classic project, allowing users to browse, search, and find out more details about specific pokemon. You know the drill. ",
+  },
+  {
     title: "The PayBack Machine",
     subtitle: "Scripting exercise that solves the issue of how to manage more complex bill settlements: when money's already been paid, and you can't be bothered to do more than one transaction. ",
     writeup:

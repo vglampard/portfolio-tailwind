@@ -6,6 +6,7 @@ import nostrami from "./projectImages/nostrami.webp";
 import payback from "./projectImages/payback.webp";
 import weather from "./projectImages/weather.webp";
 import otta from "./projectImages/otta.webp";
+import pokepedia from "./projectImages/pokepedia.webp"
 
 // Project card component containing a project image, a short description that drops down with a fade-in effect when the user clicks the project title, and a button that opens the top-level modal and passes the project data to it
 export default function ProjectsCard({ project, MODAL_STATES }) {
@@ -19,6 +20,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
     payback,
     weather,
     otta,
+    pokepedia,
   };
 
   // Function to toggle visibility of the short project description
