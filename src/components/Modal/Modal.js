@@ -4,6 +4,8 @@ import nostrami from "../Projects/projectGifs/nostrami.gif";
 import otta from "../Projects/projectGifs/otta.gif";
 import payback from "../Projects/projectGifs/payback.gif";
 import weather from "../Projects/projectGifs/weather.gif";
+import pokepedia from "../Projects/projectGifs/pokepedia.gif";
+
 import MarkdownText from "./ModalText";
 
 // Component that takes project data and uses it to render a modal on the projects page
@@ -19,6 +21,7 @@ export default function Modal({ MODAL_STATES }) {
     payback,
     weather,
     otta,
+    pokepedia,
   };
   return (
     <>
