@@ -44,7 +44,7 @@ export default function SkillCard(area) {
   };
 
   return (
-    <div className="bg-white flex-col  rounded drop-shadow-lg flex justify-center items-center w-full">
+    <div className="bg-white flex-col outline-1  rounded drop-shadow-lg flex justify-center items-center w-full hover:scale-105 transition-transform ">
       <div className="w-full flex items-start bg-yellow-100 p-1">
         <h1
           onClick={handleSeeMore}

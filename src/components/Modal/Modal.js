@@ -20,7 +20,6 @@ export default function Modal({ MODAL_STATES }) {
     weather,
     otta,
   };
-
   return (
     <>
       {MODAL_STATES.showModal ? (
