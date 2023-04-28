@@ -9,4 +9,4 @@ My personal highlights:
 Key takeaways:
 - The value of pivoting. Our initial TypeScript plan wasn't playing well with Next.js, and given the tight timeframe we decided to code it all in **JavaScript**. This was a great pivot, in retrospect, as a functioning JavaScript app is infinitely more useful to end users than a half-baked one that's strongly typed.
 - Communication is key: discussing, recording, and **documenting** all decisions was crucial in keeping us all on the same page, and I am pleased to have taken a **proactive** and **detail-oriented** role in this.
-- **Tailwind** is my friend: this was a new framework I picked up and subsequently earmarked for more exploration. 
+- **Tailwind** is my friend: this was a new framework I picked up and subsequently earmarked for more exploration. It's been used now in a number of projects I've detailed in this portfolio, and was a useful primer as I went on to explore **Bootstrap**. 

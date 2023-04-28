@@ -53,7 +53,7 @@ export default function Navbar({ fixed }) {
               "lg:flex flex-grow items-center" +
               (navbarOpen ? " flex" : " hidden")
             }
-            id="example-navbar-danger"
+           
           >
             <ul className="flex text-base flex-col lg:flex-row list-none lg:ml-auto text-slate-800  uppercase">
               <li className="nav-item">

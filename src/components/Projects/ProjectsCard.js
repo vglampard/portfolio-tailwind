@@ -69,7 +69,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
                     className=" text-slate-900 uppercase text-sm   hover:cursor-pointer  hover:translate-y-0.5  outline-none justify-center focus:outline-none flex items-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-yellow-100 my-1 px-3 w-[120px]"
                     onClick={handleOpenModal}
                   >
-                    Read more...
+                    Read more . . .
                   </p>
                 </div>
               </div>

@@ -2,7 +2,7 @@
 export const PROJECTS = [
   {
     title: "Amigo",
-    subtitle: "Full stack travel companion app devised to meet the brief: 'build an app that fixes a problem'. Full software development lifecyle completed over month-long agile project in team of six. ",
+    subtitle: "Full stack travel companion app devised to meet the brief: 'build an app that fixes a problem'. Full software development lifecycle completed over month-long agile project in team of six. ",
     writeup:
       "MDamigo",
     image: "amigo",
@@ -35,7 +35,7 @@ export const PROJECTS = [
     github: "https://github.com/vglampard/bill-splitter",
     stack: "| JavaScript | React | Tailwind |",
     description:
-      "When a group of you have various debts to settle between you (someone paid for dinner, someone paid for drinks, a someone paid for taxi?), everyone owes and is owed a bit in turn. Crunching the numbers is finicky, error-prone, and noone wants to be making multiple transfers. This app consolidates all these arious payings-back into a single transfer for each person. Accurate to about a penny.",
+      "When a group of you have various debts to settle between you (someone paid for dinner, someone paid for drinks, a someone paid for taxi?), everyone owes and is owed a bit in turn. Crunching the numbers is finicky, error-prone, and no one wants to be making multiple transfers. This app consolidates all these various payings-back into a single transfer for each person. Accurate to about a penny.",
   },
   {
     title: "BetterPassword",
@@ -47,7 +47,7 @@ export const PROJECTS = [
     github: "https://github.com/vglampard/better-password",
     stack: "| JavaScript | React | Tailwind |",
     description:
-      "Simple tool allowing users to generate and retrieve complec and secure passwords, but all they need to remember is a simple keyword and a personal salt. Intended as a sort of password manager for myself and others using shared or public devices.",
+      "Simple tool allowing users to generate and retrieve complex and secure passwords, but all they need to remember is a simple keyword and a personal salt. Intended as a sort of password manager for myself and others using shared or public devices.",
   },
   {
     title: "WeatherVisuals",
