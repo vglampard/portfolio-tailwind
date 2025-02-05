@@ -12,6 +12,7 @@ import MarkdownText from "./ModalText";
 
 export default function Modal({ MODAL_STATES }) {
   const project = MODAL_STATES.project;
+  console.log('projectL', project)
 
   // Object used to conditionally render the right GIF
   const GIFS = {

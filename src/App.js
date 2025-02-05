@@ -50,7 +50,7 @@ function App() {
                     I love finding little ways to make things faster.
                 </div>
             </div>
-      <div classname="flex flex-col justify-center">
+      <div className="flex flex-col justify-center">
           <Projects/>
       </div>
     </div>

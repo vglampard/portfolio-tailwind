@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import password from "./projectImages/password.webp";
 import amigo from "./projectImages/amigo.webp";
 import nostrami from "./projectImages/nostrami.webp";
@@ -23,25 +22,22 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
     pokepedia,
   };
 
-  // Function to toggle visibility of the short project description
-  function handleSeeMore() {
-    setShowMore(!showMore);
-    MODAL_STATES.setProject(project);
-  }
-
   // Function to open modal AND close the 'see more' short description on the project card
   function handleOpenModal() {
+    MODAL_STATES.setProject(project);
+
     MODAL_STATES.setShowModal(true);
     setShowMore(false);
   }
 
   return (
     <div>
-      <div className="group relative bg-white pb-2 m-2 w-7/8 rounded drop-shadow-lg transition duration-250 hover:scale-110">
+      <div className="group relative bg-white m-2 w-7/8 rounded drop-shadow-lg transition duration-250 hover:scale-110">
         <img src={IMAGES[project.image]} alt="project" className="w-full object-cover rounded-t" />
-        <div className="flex justify-between flex-col w-full">
-          <h1
-            className="text-sm  leading-tight inline-block mr-4 py-2 pl-2 text-slate-900 uppercase"
+        <div className="absolute top-1/3 bg-amber-100 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-between flex-col w-full py-3">
+    
+        <h1
+            className="text-sm font-bold leading-tight inline-block mr-4 py-2 pl-2 text-slate-900 uppercase"
           >{project.title}{' > > >'}
           </h1>
            <div
@@ -63,6 +59,7 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
               </div>
             </div>
         </div>
+
       </div>
     </div>
   );
