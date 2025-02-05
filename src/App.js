@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import github from "./icons/github-sign.png";
 import linkedin from "./icons/linkedin-logo.png";
 import wordpress from "./icons/wordpress-logo.png";
-import pp from "./pp.jpg";
+import profpic from "./assets/profilePicNoBg.png";
 import { Link } from "react-router-dom";
+import Projects from "./components/Projects/Projects"
 import { text, icons } from "./constants/homePageData";
 function App() {
   const sideVariants = {
@@ -28,87 +29,30 @@ function App() {
 
   return (
     <div className="flex flex-col mt-10 md:mt-20 sm:mt-10 items-center justify-center ">
-      <div className="flex flex-col  lg:justify-center lg:gap-5 lg:flex-row items-center justify-center">
-        <motion.img
-          src={pp}
-          initial={{ x: -900 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 1 }}
-          alt="profile victoria lampard"
-          className="w-[30%] md:w-[20%] lg:w-[20%] rounded-full  outline drop-shadow-xl"
-        ></motion.img>
-        <motion.div
-          className="container pt-2 sm:flex-col flex items-start  justify-center  lg:max-w-[40%] w-[60%]"
-          initial="closed"
-          animate="open"
-          variants={sideVariants}
-        >
-          <div className="flex flex-wrap flex-col justify-end">
-            {text.map(({ name, to, id, style }) => (
-              <motion.p
-                key={id}
-                variants={itemVariants}
-                transition={{ duration: 1 }}
-                className={style}
-              >
-                {name}
-              </motion.p>
-            ))}
-          </div>
-        </motion.div>
-      </div>
+      <div className="flex flex-col items-center justify-center">
+      <img src={profpic} alt="Victoria Lampard" className="rounded-full mt-14 md:mt-10 w-52 mb-2 border-2 border-black"/>
+          <h2 className="text-3xl font-bold mt-1">Victoria Lampard</h2>
+          <h5>Typescript | Angular | React </h5>
+                <div className="p-5 text-justify lg:w-[75vw] md:w-[75vw]">
+                    I'm a <span className="bg-amber-100">proactive problem-solver</span>, an <span
+                    className="bg-amber-100">adept
+                    communicator</span>, and committed
+                    to rapid <span className="bg-amber-100">career development</span>. Currently, I help automotive dealers sell cars more efficiently as part of a startup-style team
+                    developing a car sales and finance storefront that's self-serve for
+                    dealerships.I've also volunteered with the <span className="bg-amber-100">Scottish Tech
+                    Army</span>, am an active member of the <span className="bg-amber-100 font-bold"><a
+                    href="https://www.glasgowjs.org/" target="_blank">Glasgow.js</a> </span> and
+                    <span className="bg-amber-100 font-bold"><a
+                        href="https://www.glasgowjs.org/" target="_blank"> Edinburgh.js</a></span> groups, and set up and
+                    currently run the Scottish Technology Club <span className="bg-amber-100 font-bold"><a
+                    href="https://www.scottishtechnology.club/mentoring"
+                    target="_blank">mentorship programme.</a></span> <br/><br/>
+                    I love finding little ways to make things faster.
+                </div>
+            </div>
       <div classname="flex flex-col justify-center">
         <div className="p-5 text-justify lg:w-[50vw] md:w-[50vw]">
-          <motion.p
-            target="_blank"
-            initial={{ x: 900 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1 }}
-          >
-            <span className="bg-yellow-100 px-1 pb-1 text-lg ">
-              Linguist turned full stack developer,
-            </span>{" "}
-            I'm a proactive problem-solver, an adept communicator, and committed
-            to rapid career development. Have a browse of my{" "}
-            <Link
-              to="projects"
-              className="  bg-yellow-100 px-1 pb-1   hover:underline"
-            >
-              projects
-            </Link>
-            , see the{" "}
-            <Link
-              to="skills"
-              className=" bg-yellow-100 px-1 pb-1   hover:underline"
-            >
-              skills
-            </Link>{" "}
-            I'm developing, and{" "}
-            <Link
-              to="contact"
-              className=" bg-yellow-100 px-1 pb-1  hover:underline"
-            >
-              get in touch...
-            </Link>
-          </motion.p>
-        </div>
-        <div className="flex items-start gap-2 justify-center ">
-          {icons.map((icon) => (
-            <motion.a
-              key={icon.name}
-              src={IMAGES[icon.src]}
-              href={icon.link}
-              target="_blank"
-              variants={sideVariants}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className="w-10 drop-shadow-xl hover:translate-y-0.5   "
-            >
-              {" "}
-              <img key={icon.name} src={IMAGES[icon.src]} alt={icon.name} />
-            </motion.a>
-          ))}
+          <Projects/>
         </div>
       </div>
     </div>
