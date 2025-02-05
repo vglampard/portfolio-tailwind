@@ -37,46 +37,31 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
 
   return (
     <div>
-      <div className="  bg-white pb-2 m-2 rounded drop-shadow-lg">
-        <img src={IMAGES[project.image]} alt="project" className="rounded-t" />
-        <div className="flex justify-between  flex-col">
+      <div className="group relative bg-white pb-2 m-2 w-7/8 rounded drop-shadow-lg transition duration-250 hover:scale-110">
+        <img src={IMAGES[project.image]} alt="project" className="w-full object-cover rounded-t" />
+        <div className="flex justify-between flex-col w-full">
           <h1
-            onClick={handleSeeMore}
-            className="text-sm  hover:cursor-pointer leading-tight inline-block mr-4 py-2 pl-2 hover:translate-y-0.5   text-slate-900 uppercase"
-          >
-            {" "}
-            See {project.title}{" "}
-            <span className="animate-pulse text-xl ">
-              {showMore ? " <<<" : " >>>"}
-            </span>
+            className="text-sm  leading-tight inline-block mr-4 py-2 pl-2 text-slate-900 uppercase"
+          >{project.title}{' > > >'}
           </h1>
-          {showMore && (
-            // Div to provide fade-in effect
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                type: "tween",
-                duration: "0.5",
-              }}
-              className="flex items-center justify-center pr-2 "
+           <div
+              className="flex items-center justify-center pr-2 w-full "
             >
               <div className=" justify-center px-2 gap-2 items-center ">
                 {/* Project description */}
                 <p className=" text-sm font-thin leading-tight inline-block  text-slate-900 ease-linear">
                   {project.subtitle}
                 </p>
-                <div className="w-full flex justify-end">
+                <div className="flex justify-end">
                   <p
-                    className=" text-slate-900 uppercase text-sm   hover:cursor-pointer  hover:translate-y-0.5  outline-none justify-center focus:outline-none flex items-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-yellow-100 my-1 px-3 w-[120px]"
+                    className="text-slate-900 uppercase text-sm hover:cursor-pointer  hover:translate-y-0.5  outline-none justify-center focus:outline-none flex items-center drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-yellow-100 my-1 px-3"
                     onClick={handleOpenModal}
                   >
                     Read more . . .
                   </p>
                 </div>
               </div>
-            </motion.div>
-          )}
+            </div>
         </div>
       </div>
     </div>
