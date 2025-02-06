@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
-import Skills from "./components/Skills/Skills";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -20,13 +19,11 @@ root.render(
     <div className=" flex items-center h-full justify-center">
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="projects" element={<Projects />} />
       <Route path="contact" element={<Contact />} />
-      {/* <Route path="aboutme" element={<AboutMe />} /> */}
-      <Route path="skills" element={<Skills />} />
     </Routes>
     </div>
-    <Footer /> </BrowserRouter>
+    <Footer /> 
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

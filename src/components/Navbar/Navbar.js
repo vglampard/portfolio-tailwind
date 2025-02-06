@@ -5,7 +5,6 @@ import logo from "./lv.png";
 // drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
 //drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
 export default function Navbar({ fixed }) {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 outline outline-2 w-[100%] bg-yellow-100 mb-1 drop-shadow-xl">
@@ -31,13 +30,7 @@ export default function Navbar({ fixed }) {
               </a>
             </div>
           </div>
-          <div
-            className={
-              "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
-            }
-           
-          >
+          <div>
             <ul className="flex text-base flex-col lg:flex-row list-none lg:ml-auto text-slate-800  uppercase">
               <li className="nav-item">
                 <Link

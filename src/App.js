@@ -1,31 +1,7 @@
 import "./App.css";
-import { motion } from "framer-motion";
-import github from "./icons/github-sign.png";
-import linkedin from "./icons/linkedin-logo.png";
-import wordpress from "./icons/wordpress-logo.png";
 import profpic from "./assets/profilePicNoBg.png";
-import { Link } from "react-router-dom";
 import Projects from "./components/Projects/Projects"
-import { text, icons } from "./constants/homePageData";
 function App() {
-  const sideVariants = {
-    open: {
-      transition: {
-        staggerChildren: 0.2,
-        staggerDirection: 1,
-        duration: 3,
-      },
-    },
-  };
-
-  const itemVariants = {
-    closed: {
-      x: -5000,
-    },
-    open: { x: 0 },
-  };
-
-  const IMAGES = { wordpress, github, linkedin };
 
   return (
     <div className="flex flex-col mt-10 md:mt-5 sm:mt-5 items-center justify-center ">
