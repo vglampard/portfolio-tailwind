@@ -34,10 +34,10 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
     <div>
       <div className="group relative bg-white m-2 w-7/8 rounded drop-shadow-lg transition duration-250 hover:scale-110">
         <img src={IMAGES[project.image]} alt="project" className="w-full object-cover rounded-t" />
-        <div className="absolute top-1/3 bg-amber-100 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-between flex-col w-full py-3">
+        <div className="absolute bottom-0 bg-amber-100 opacity-0 group-hover:opacity-100 transition duration-300 flex justify-between flex-col w-full py-3 border-black border-t-2 border-b-4">
     
         <h1
-            className="text-sm font-bold leading-tight inline-block mr-4 py-2 pl-2 text-slate-900 uppercase"
+            className="text-sm font-bold leading-tight inline-block mr-4 py-2 pl-2 text-slate-900 uppercase" 
           >{project.title}{' > > >'}
           </h1>
            <div
