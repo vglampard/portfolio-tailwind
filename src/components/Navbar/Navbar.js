@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "./lv.png";
-//[text-shadow:_0_07px_0_rgb(254_243_199_/_100%)]
-// drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
-//drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
 export default function Navbar({ fixed }) {
   return (
     <>
