@@ -14,12 +14,12 @@ export default function AboutMe(){
           developing a car sales and finance storefront that's self-serve for
           dealerships. I've also volunteered with the <span className="bg-amber-100">Scottish Tech
             Army</span>, am an active member of the <span className="bg-amber-100 font-bold underline"><a
-              href="https://www.glasgowjs.org/" target="_blank">Glasgow.js</a> </span> and
+              href="https://www.glasgowjs.org/" target="_blank" rel="noreferrer">Glasgow.js</a> </span> and
           <span className="bg-amber-100 font-bold underline"><a
-            href="https://www.glasgowjs.org/" target="_blank">Edinburgh.js</a></span> groups, and set up and
+            href="https://www.glasgowjs.org/" target="_blank" rel="noreferrer">Edinburgh.js</a></span> groups, and set up and
           currently run the Scottish Technology Club <span className="bg-amber-100 font-bold underline"><a
             href="https://www.scottishtechnology.club/mentoring"
-            target="_blank">mentorship programme.</a></span> <br /><br />
+            target="_blank" rel="noreferrer">mentorship programme.</a></span> <br /><br />
           I love finding little ways to make things faster.
         </div>
       </div>
