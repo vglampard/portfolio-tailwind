@@ -9,7 +9,6 @@ import pokepedia from "./projectImages/pokepedia.webp"
 
 // Project card component containing a project image, a short description that drops down with a fade-in effect when the user clicks the project title, and a button that opens the top-level modal and passes the project data to it
 export default function ProjectsCard({ project, MODAL_STATES }) {
-  const [showMore, setShowMore] = React.useState(false);
 
   // Object used to conditionally render the correct project image
   const IMAGES = {
@@ -27,7 +26,6 @@ export default function ProjectsCard({ project, MODAL_STATES }) {
     MODAL_STATES.setProject(project);
 
     MODAL_STATES.setShowModal(true);
-    setShowMore(false);
   }
 
   return (
